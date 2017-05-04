@@ -1,0 +1,97 @@
+#|
+Rachel Rotteveel
+6.905 Problem Set 7
+April 28, 2017
+|#
+
+(cd "~/Documents/MIT Senior Year/6.905/pset8/propagator/")
+(load "load")
+(cd "~/Documents/MIT Senior Year/6.905/pset8/")
+(load "load")
+(initialize-scheduler) ; initializes propagator system
+
+(define-cell john-earnings)
+(tell! john-earnings (make-interval 20 27) 'Harry-estimate)
+
+(content john-earnings)
+#|
+#(tms (#(value=#[interval 20 27],
+	       premises=(harry-estimate),
+	       informants=(user))))
+|#
+
+(tell! john-earnings (make-interval 15 21) 'Mary-estimate)
+(pp (content john-earnings))
+#|
+#(tms
+  (#(value=#[interval 20 21],
+   premises=(harry-estimate mary-estimate),
+   informants=(user))
+   #(value=#[interval 15 21],
+   premises=(mary-estimate),
+   informants=(user))
+   #(value=#[interval 20 27],
+   premises=(harry-estimate),
+   informants=(user))))
+|#
+
+;; best estimate based on both sources of information
+(inquire john-earnings) 
+#|
+#(value=#[interval 20 21],
+   premises=(harry-estimate mary-estimate),
+   informants=(user))
+|#
+
+(tell! john-earnings (make-interval 25 30) 'bank-estimate)
+;;(contradiction (mary-estimate harry-estimate bank-estimate))
+
+(content john-earnings)
+#|
+#(tms (#(value=#[contradictory-interval 25 21],
+   premises=(mary-estimate harry-estimate bank-estimate),
+   informants=(user)) #(value=#[interval 25 30],
+   premises=(bank-estimate),
+   informants=(user)) #(value=#[interval 20 21],
+   premises=(harry-estimate mary-estimate),
+   informants=(user)) #(value=#[interval 15 21],
+   premises=(mary-estimate),
+   informants=(user)) #(value=#[interval 20 27],
+   premises=(harry-estimate),
+   informants=(user))))
+|#
+
+(inquire john-earnings)
+#|
+(contradiction (mary-estimate harry-estimate bank-estimate))
+;Value: #(value=#[contradictory-interval 25 21],
+   premises=(mary-estimate harry-estimate bank-estimate),
+   informants=(user))
+|#
+
+#|
+First, we will define a compound propagator that takes a value cell,
+an interval, and a boolean output cell. It tells the boolean output
+cell to be true only if the contents of the value cell is within the
+range specified by the range.
+|#
+(define-propagator (p:in-range? value interval bool)
+  (p:and (e:<= (e:interval-low interval) value)
+	 (e:<= value (e:interval-high interval))
+	 bool))
+
+;;;;;;;;;;;;;;;;;;;
+;;; Problem 8.1 ;;;
+;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;
+;;; Problem 8.2 ;;;
+;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;
+;;; Problem 8.3 ;;;
+;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;
+;;; Problem 8.4 ;;;
+;;;;;;;;;;;;;;;;;;;
