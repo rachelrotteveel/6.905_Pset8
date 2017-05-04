@@ -1,19 +1,19 @@
 #|
 Rachel Rotteveel
 6.905 Problem Set 7
-April 28, 2017
+May 5, 2017
 |#
 
-(cd "~/Documents/MIT Senior Year/6.905/pset8/propagator/")
+(cd "~/6.905_Pset8/propagator/")
 (load "load")
-(cd "~/Documents/MIT Senior Year/6.905/pset8/")
+(cd "~/6.905_Pset8")
 (load "load")
 (initialize-scheduler) ; initializes propagator system
 
 (define-cell john-earnings)
 (tell! john-earnings (make-interval 20 27) 'Harry-estimate)
 
-(content john-earnings)
+(content john-earnings)]
 #|
 #(tms (#(value=#[interval 20 27],
 	       premises=(harry-estimate),
@@ -141,11 +141,82 @@ range specified by the range.
 
 (add-interval-property john-earnings (make-interval 0 20) 'loan-eligible)
 
+(tell! (eq-get john-earnings 'loan-eligible) #t 'mit-financial)
+;; (contradiction (bank-estimate harry-estimate mit-financial))
 
+(for-each retract! '(harry-estimate bank-estimate))
+
+(inquire john-earnings)
+#|
+#(value=#[interval 0 20],
+   premises=(mit-financial),
+   informants=((switch:p status-cell range)))
+|#
+
+(retract! 'mit-financial)
+
+(inquire john-earnings)
+;; #(*the-nothing*)
+
+(inquire (eq-get john-earnings 'loan-eligible))
+;; #(*the-nothing*)
+
+(assert! 'Mary-estimate)
+
+(inquire john-earnings)
+#|
+#(value=#[interval 15 21],
+   premises=(mary-estimate),
+   informants=(user))
+|#
+
+(inquire (eq-get john-earnings 'loan-eligible))
+;; #(*the-nothing*)
+
+(tell! john-earnings (make-interval 5 18) 'Debby-estimate)
+(inquire john-earnings)
+#|
+#(value=#[interval 15 18],
+   premises=(mary-estimate debby-estimate),
+   informants=(user))
+|#
+
+(inquire (eq-get john-earnings 'loan-eligible))
+#|
+#(value=#t,
+   premises=(debby-estimate mary-estimate),
+   informants=((and:p cell19 cell17)))
+|#
+
+(define ((c:bins named-ranges) numeric-interval)
+  (for-each
+   (lambda (named-range)
+     (add-interval-property numeric-interval
+			    (cadr named-range)
+			    (car named-range)))
+   named-ranges))
+
+(define-cell foo)
+
+((c:bins (named-ranges 'gjs
+		       '(low ,(make-interval 3 6))
+		       '(medium ,(make-interval 5 8))
+		       '(high ,(make-interval 7 9))))
+ foo)
+#|
+The intervals will depend on the GJS premise. If GJS is retracted,
+the intervals will become unknown, but the named cells will remain,
+and new intervals can be placed in them.
+|#
+
+(draw:show-graph)
 
 ;;;;;;;;;;;;;;;;;;;
 ;;; Problem 8.1 ;;;
 ;;;;;;;;;;;;;;;;;;;
+
+
+
 
 ;;;;;;;;;;;;;;;;;;;
 ;;; Problem 8.2 ;;;
