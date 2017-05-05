@@ -73,7 +73,8 @@
 	 'done)
 	(else
 	 (error "I don't know how to sum multiple parts"))))
-	      
+
+#|	      
 (define (combine-financial-entities compound . parts)
   (assert (every financial-entity? parts))
   (cond ((= (length parts) 2)
@@ -84,16 +85,54 @@
 	   'done))
 	(else
 	 (error "I don't know how to combine multiple parts"))))
+|#
+
+(define (combine-financial-entities compound . parts)
+  ;(assert (every financial-entity? parts))
+  (display parts)(newline)
+  (display "length: ")(display (length parts))(newline)
+  (cond ((= (length parts) 0)
+         'done) 
+        ((= (length parts) 2)
+	 (let ((p1 (car parts)) (p2 (cadr parts)))
+           (display "p1: ")(display p1)(newline)
+           (display "p2: ")(display p2)(newline)
+	   (c:+ (gross-income p1) (gross-income p2) (gross-income compound))
+	   (c:+ (net-income p1) (net-income p2) (net-income compound))
+	   (c:+ (expenses p1) (expenses p2) (expenses compound))
+	   'done))
+	((> (length parts) 0) 
+	 (let ((p1 (car parts)) (rest (cdr parts)))
+           (display "p1: ")(display p1)(newline)
+           (display "rest: ")(display rest)(newline)
+           (rest-combined (combine-financial-entities compound rest))
+           (c:+ (gross-income p1) 
+                (gross-income rest-combined) 
+                (gross-income compound))
+	   (c:+ (net-income p1) 
+                (net-income rest-combined)
+                (net-income compound))
+	   (c:+ (expenses p1) 
+                (expenses rest-combined)
+                (expenses compound))
+           'done))
+           ))))
+
 
 #|
 (initialize-scheduler)
 
 (make-financial-entity 'Alyssa)
 (make-financial-entity 'Ben)
+(make-financial-entity 'baby)
 
 ;;; Ben and Alyssa are married
 (make-financial-entity 'Ben-Alyssa)
 (combine-financial-entities 'Ben-Alyssa 'Ben 'Alyssa)
+
+;;; Ben, Alyssa, and their baby are one financial entity
+(make-financial-entity 'Ben-Alyssa-baby)
+(combine-financial-entities 'Ben-Alyssa-baby 'Ben 'Alyssa 'baby)
 
 ;;; Ben and Alyssa file income tax jointly
 (tell! (gross-income 'Ben-Alyssa) 427000 'IRS)

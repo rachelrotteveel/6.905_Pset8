@@ -217,7 +217,7 @@ and new intervals can be placed in them.
 
 (initialize-scheduler)    
 
-
+#|
 (define (create-people people)
   (for-each
    (lambda (person)
@@ -233,24 +233,24 @@ and new intervals can be placed in them.
      (define-cell expenses)
      (eq-put! person 'expenses expenses)) 
    people))
+|#
 
 
-#|
 (define (create-people people)
-  (display people)
   (for-each 
    (lambda (p)
-     (display p)
      (define-cell p)
+     ;; add properties to person cell
      (let-cells (height-cell weight-cell income-cell expenses-cell)  
-                ((eq-put! p 'height height-cell)
-                 (eq-put! p 'weight weight-cell)
-                 (eq-put! p 'income income-cell)
-                 (eq-put! p 'expenses expenses-cell))))
+                (eq-put! p 'height height-cell)
+                (eq-put! p 'weight weight-cell)
+                (eq-put! p 'income income-cell)
+                (eq-put! p 'expenses expenses-cell)))
    people))
-|#
-               
+
+(eq-get 'joey 'height)
 (create-people '('martin 'joey 'melinda 'barb 'rob))
+(draw:show-graph)
 (tell! (eq-get 'joey 'height) 56 'melinda)
 
 
@@ -295,12 +295,7 @@ and new intervals can be placed in them.
 
 (define-cell 'martin)
 (tell! (eq-get 'martin 'height) 185 'barb)
-(add-symbolic-ranges Martin 120 180 20000 50000)
-(inquire Martin)
-
-
-
-(content martin)
+(add-symbolic-ranges 'martin 120 180 20000 50000)
 
 
 
