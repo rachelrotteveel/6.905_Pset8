@@ -1,5 +1,5 @@
 /* Emacs: this is -*- C -*- code, */
-/* generated 2017-05-03T22:04:50-04 by Liar version 4.118. */
+/* generated 2017-05-10T00:19:49-04 by Liar version 4.118. */
 
 #include "liarc.h"
 
@@ -1742,7 +1742,7 @@ INVOKE_INTERFACE_TARGET_0
 #ifndef WANT_ONLY_DATA
 
 SCHEME_OBJECT *
-explain_so_5b8cfd7dfcf6d7e9 (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
+explain_so_f73618c76510d423 (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
 {
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES ();
@@ -1822,7 +1822,7 @@ DEFLABEL (label_3)
 INVOKE_INTERFACE_TARGET_4
 }
 
-static const struct liarc_code_S arr_decl_explain_so_5b8cfd7dfcf6d7e9 [3] =
+static const struct liarc_code_S arr_decl_explain_so_f73618c76510d423 [3] =
   {
     { "explain_so_code_1", 55, explain_so_code_1 },
     { "explain_so_code_2", 3, explain_so_code_2 },
@@ -1830,19 +1830,19 @@ static const struct liarc_code_S arr_decl_explain_so_5b8cfd7dfcf6d7e9 [3] =
   };
 
 int
-decl_explain_so_5b8cfd7dfcf6d7e9 (void)
+decl_explain_so_f73618c76510d423 (void)
 {
-  DECLARE_SUBCODE_MULTIPLE (arr_decl_explain_so_5b8cfd7dfcf6d7e9);
+  DECLARE_SUBCODE_MULTIPLE (arr_decl_explain_so_f73618c76510d423);
   return (0);
 }
 
-DECLARE_COMPILED_CODE ("explain.so", 3, decl_explain_so_5b8cfd7dfcf6d7e9, explain_so_5b8cfd7dfcf6d7e9)
+DECLARE_COMPILED_CODE ("explain.so", 3, decl_explain_so_f73618c76510d423, explain_so_f73618c76510d423)
 
 #endif /* !WANT_ONLY_DATA */
 
 #ifndef WANT_ONLY_CODE
 
-static const unsigned char prog_explain_so_data_5b8cfd7dfcf6d7e9 [1115] =
+static const unsigned char prog_explain_so_data_f73618c76510d423 [1115] =
   "\xbe\x01\x08\x94\x02\x1d\x0c\xb8\x0d\x1d\xb0\x81\x88\x0d\x0d\x0d"
   "\x0c\x81\x02\x86\x02\x02\x02\xc1\x0d\x08\x06\x07\x85\xc2\x02\x02"
   "\x1d\x0c\x0d\xb9\x0d\xba\x24\x28\x0d\x28\x0d\x28\x0d\x28\x0d\xbb"
@@ -1915,19 +1915,19 @@ static const unsigned char prog_explain_so_data_5b8cfd7dfcf6d7e9 [1115] =
   "\x06\x81\x81\x02\x01\x04\x81\x81\x02\x07\x11";
 
 SCHEME_OBJECT *
-explain_so_data_5b8cfd7dfcf6d7e9 (entry_count_t dispatch_base)
+explain_so_data_f73618c76510d423 (entry_count_t dispatch_base)
 {
   SCHEME_OBJECT ccb;
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES_FOR_DATA ();
 
-  ccb = (unstackify (((unsigned char *) (& (prog_explain_so_data_5b8cfd7dfcf6d7e9 [0]))), (sizeof (prog_explain_so_data_5b8cfd7dfcf6d7e9)), dispatch_base));
+  ccb = (unstackify (((unsigned char *) (& (prog_explain_so_data_f73618c76510d423 [0]))), (sizeof (prog_explain_so_data_f73618c76510d423)), dispatch_base));
   current_block = (OBJECT_ADDRESS (ccb));
   return (& (current_block [LABEL_7]));
 }
 
-DECLARE_COMPILED_DATA_NS ("explain.so", explain_so_data_5b8cfd7dfcf6d7e9)
+DECLARE_COMPILED_DATA_NS ("explain.so", explain_so_data_f73618c76510d423)
 
 #endif /* !WANT_ONLY_CODE */
 
-DECLARE_DYNAMIC_INITIALIZATION ("explain.so", "fb470fad41cf741a")
+DECLARE_DYNAMIC_INITIALIZATION ("explain.so", "030d49122c17188f")

@@ -1,5 +1,5 @@
 /* Emacs: this is -*- C -*- code, */
-/* generated 2017-05-03T22:03:37-04 by Liar version 4.118. */
+/* generated 2017-05-10T00:18:32-04 by Liar version 4.118. */
 
 #include "liarc.h"
 
@@ -3288,7 +3288,7 @@ INVOKE_PRIMITIVE_TARGET
 #ifndef WANT_ONLY_DATA
 
 SCHEME_OBJECT *
-diagram_cells_so_2bba20dba8286b26 (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
+diagram_cells_so_54b37ea78c4b4628 (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
 {
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES ();
@@ -3853,7 +3853,7 @@ INVOKE_INTERFACE_TARGET_0
 INVOKE_PRIMITIVE_TARGET
 }
 
-static const struct liarc_code_S arr_decl_diagram_cells_so_2bba20dba8286b26 [7] =
+static const struct liarc_code_S arr_decl_diagram_cells_so_54b37ea78c4b4628 [7] =
   {
     { "diagram_cells_so_code_1", 35, diagram_cells_so_code_1 },
     { "diagram_cells_so_code_2", 22, diagram_cells_so_code_2 },
@@ -3865,19 +3865,19 @@ static const struct liarc_code_S arr_decl_diagram_cells_so_2bba20dba8286b26 [7] 
   };
 
 int
-decl_diagram_cells_so_2bba20dba8286b26 (void)
+decl_diagram_cells_so_54b37ea78c4b4628 (void)
 {
-  DECLARE_SUBCODE_MULTIPLE (arr_decl_diagram_cells_so_2bba20dba8286b26);
+  DECLARE_SUBCODE_MULTIPLE (arr_decl_diagram_cells_so_54b37ea78c4b4628);
   return (0);
 }
 
-DECLARE_COMPILED_CODE ("diagram-cells.so", 28, decl_diagram_cells_so_2bba20dba8286b26, diagram_cells_so_2bba20dba8286b26)
+DECLARE_COMPILED_CODE ("diagram-cells.so", 28, decl_diagram_cells_so_54b37ea78c4b4628, diagram_cells_so_54b37ea78c4b4628)
 
 #endif /* !WANT_ONLY_DATA */
 
 #ifndef WANT_ONLY_CODE
 
-static const unsigned char prog_diagram_cells_so_data_2bba20dba8286b26 [2654] =
+static const unsigned char prog_diagram_cells_so_data_54b37ea78c4b4628 [2654] =
   "\x98\x01\x1c\x9a\x05\x1d\x0c\xb8\x0d\x1d\xb0\x81\x88\x07\xc1\xb9"
   "\xc2\xc1\xba\x0d\xbb\x0d\xbc\x24\x28\x0d\xbd\x28\x0d\xbe\x28\x0d"
   "\x28\x0d\x28\x0d\x28\x0d\xbf\x28\x0d\x1c\x28\x0d\x28\x0d\x1c\x28"
@@ -4046,19 +4046,19 @@ static const unsigned char prog_diagram_cells_so_data_2bba20dba8286b26 [2654] =
   "\x87\x02\x02\x06\x81\x85\x02\x01\x04\x81\x83\x02\x39\x63";
 
 SCHEME_OBJECT *
-diagram_cells_so_data_2bba20dba8286b26 (entry_count_t dispatch_base)
+diagram_cells_so_data_54b37ea78c4b4628 (entry_count_t dispatch_base)
 {
   SCHEME_OBJECT ccb;
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES_FOR_DATA ();
 
-  ccb = (unstackify (((unsigned char *) (& (prog_diagram_cells_so_data_2bba20dba8286b26 [0]))), (sizeof (prog_diagram_cells_so_data_2bba20dba8286b26)), dispatch_base));
+  ccb = (unstackify (((unsigned char *) (& (prog_diagram_cells_so_data_54b37ea78c4b4628 [0]))), (sizeof (prog_diagram_cells_so_data_54b37ea78c4b4628)), dispatch_base));
   current_block = (OBJECT_ADDRESS (ccb));
   return (& (current_block [LABEL_39]));
 }
 
-DECLARE_COMPILED_DATA_NS ("diagram-cells.so", diagram_cells_so_data_2bba20dba8286b26)
+DECLARE_COMPILED_DATA_NS ("diagram-cells.so", diagram_cells_so_data_54b37ea78c4b4628)
 
 #endif /* !WANT_ONLY_CODE */
 
-DECLARE_DYNAMIC_INITIALIZATION ("diagram-cells.so", "29a0e05671a005a2")
+DECLARE_DYNAMIC_INITIALIZATION ("diagram-cells.so", "7ff761117017cbb7")

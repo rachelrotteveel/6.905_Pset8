@@ -1,5 +1,5 @@
 /* Emacs: this is -*- C -*- code, */
-/* generated 2017-05-03T22:04:51-04 by Liar version 4.118. */
+/* generated 2017-05-10T00:19:50-04 by Liar version 4.118. */
 
 #include "liarc.h"
 
@@ -740,7 +740,7 @@ INVOKE_INTERFACE_TARGET_1
 #ifndef WANT_ONLY_DATA
 
 SCHEME_OBJECT *
-example_networks_so_8cdc4a1ea19e06f2 (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
+example_networks_so_c24e445aac0f148c (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
 {
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES ();
@@ -1494,7 +1494,7 @@ INVOKE_INTERFACE_TARGET_1
 INVOKE_PRIMITIVE_TARGET
 }
 
-static const struct liarc_code_S arr_decl_example_networks_so_8cdc4a1ea19e06f2 [5] =
+static const struct liarc_code_S arr_decl_example_networks_so_c24e445aac0f148c [5] =
   {
     { "example_networks_so_code_1", 3, example_networks_so_code_1 },
     { "example_networks_so_code_2", 5, example_networks_so_code_2 },
@@ -1504,19 +1504,19 @@ static const struct liarc_code_S arr_decl_example_networks_so_8cdc4a1ea19e06f2 [
   };
 
 int
-decl_example_networks_so_8cdc4a1ea19e06f2 (void)
+decl_example_networks_so_c24e445aac0f148c (void)
 {
-  DECLARE_SUBCODE_MULTIPLE (arr_decl_example_networks_so_8cdc4a1ea19e06f2);
+  DECLARE_SUBCODE_MULTIPLE (arr_decl_example_networks_so_c24e445aac0f148c);
   return (0);
 }
 
-DECLARE_COMPILED_CODE ("example-networks.so", 52, decl_example_networks_so_8cdc4a1ea19e06f2, example_networks_so_8cdc4a1ea19e06f2)
+DECLARE_COMPILED_CODE ("example-networks.so", 52, decl_example_networks_so_c24e445aac0f148c, example_networks_so_c24e445aac0f148c)
 
 #endif /* !WANT_ONLY_DATA */
 
 #ifndef WANT_ONLY_CODE
 
-static const unsigned char prog_example_networks_so_data_8cdc4a1ea19e06f2 [1249] =
+static const unsigned char prog_example_networks_so_data_c24e445aac0f148c [1249] =
   "\x94\x01\x0a\xc9\x02\x1d\x0c\xb8\x0d\x1d\xb0\x81\x88\x85\x02\x0a"
   "\x02\x0d\xb9\x28\x0d\xba\x28\x0d\x28\x0d\x23\x22\x29\x22\x29\x22"
   "\x29\x21\x17\x2b\xbb\x1d\xb0\x82\x88\x02\x85\x0a\x02\x0d\xbc\xb1"
@@ -1598,19 +1598,19 @@ static const unsigned char prog_example_networks_so_data_8cdc4a1ea19e06f2 [1249]
   "\x01";
 
 SCHEME_OBJECT *
-example_networks_so_data_8cdc4a1ea19e06f2 (entry_count_t dispatch_base)
+example_networks_so_data_c24e445aac0f148c (entry_count_t dispatch_base)
 {
   SCHEME_OBJECT ccb;
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES_FOR_DATA ();
 
-  ccb = (unstackify (((unsigned char *) (& (prog_example_networks_so_data_8cdc4a1ea19e06f2 [0]))), (sizeof (prog_example_networks_so_data_8cdc4a1ea19e06f2)), dispatch_base));
+  ccb = (unstackify (((unsigned char *) (& (prog_example_networks_so_data_c24e445aac0f148c [0]))), (sizeof (prog_example_networks_so_data_c24e445aac0f148c)), dispatch_base));
   current_block = (OBJECT_ADDRESS (ccb));
   return (& (current_block [LABEL_62]));
 }
 
-DECLARE_COMPILED_DATA_NS ("example-networks.so", example_networks_so_data_8cdc4a1ea19e06f2)
+DECLARE_COMPILED_DATA_NS ("example-networks.so", example_networks_so_data_c24e445aac0f148c)
 
 #endif /* !WANT_ONLY_CODE */
 
-DECLARE_DYNAMIC_INITIALIZATION ("example-networks.so", "474a18d478a2f8bc")
+DECLARE_DYNAMIC_INITIALIZATION ("example-networks.so", "82bcc9246d25c0d7")

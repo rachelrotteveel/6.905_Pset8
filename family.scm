@@ -73,8 +73,7 @@
 	 'done)
 	(else
 	 (error "I don't know how to sum multiple parts"))))
-
-#|	      
+	      
 (define (combine-financial-entities compound . parts)
   (assert (every financial-entity? parts))
   (cond ((= (length parts) 2)
@@ -85,8 +84,8 @@
 	   'done))
 	(else
 	 (error "I don't know how to combine multiple parts"))))
-|#
 
+#|
 (define (combine-financial-entities compound . parts)
   ;(assert (every financial-entity? parts))
   (display parts)(newline)
@@ -117,6 +116,7 @@
                 (expenses compound))
            'done))
            ))))
+|#
 
 
 #|

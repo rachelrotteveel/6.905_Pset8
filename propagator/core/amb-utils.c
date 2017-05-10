@@ -1,5 +1,5 @@
 /* Emacs: this is -*- C -*- code, */
-/* generated 2017-05-03T22:04:49-04 by Liar version 4.118. */
+/* generated 2017-05-10T00:19:48-04 by Liar version 4.118. */
 
 #include "liarc.h"
 
@@ -998,7 +998,7 @@ INVOKE_INTERFACE_TARGET_1
 #ifndef WANT_ONLY_DATA
 
 SCHEME_OBJECT *
-amb_utils_so_0dabcafe68084f46 (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
+amb_utils_so_a06b036f4397d421 (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
 {
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES ();
@@ -1621,7 +1621,7 @@ INVOKE_INTERFACE_TARGET_1
 INVOKE_PRIMITIVE_TARGET
 }
 
-static const struct liarc_code_S arr_decl_amb_utils_so_0dabcafe68084f46 [5] =
+static const struct liarc_code_S arr_decl_amb_utils_so_a06b036f4397d421 [5] =
   {
     { "amb_utils_so_code_1", 3, amb_utils_so_code_1 },
     { "amb_utils_so_code_2", 3, amb_utils_so_code_2 },
@@ -1631,19 +1631,19 @@ static const struct liarc_code_S arr_decl_amb_utils_so_0dabcafe68084f46 [5] =
   };
 
 int
-decl_amb_utils_so_0dabcafe68084f46 (void)
+decl_amb_utils_so_a06b036f4397d421 (void)
 {
-  DECLARE_SUBCODE_MULTIPLE (arr_decl_amb_utils_so_0dabcafe68084f46);
+  DECLARE_SUBCODE_MULTIPLE (arr_decl_amb_utils_so_a06b036f4397d421);
   return (0);
 }
 
-DECLARE_COMPILED_CODE ("amb-utils.so", 39, decl_amb_utils_so_0dabcafe68084f46, amb_utils_so_0dabcafe68084f46)
+DECLARE_COMPILED_CODE ("amb-utils.so", 39, decl_amb_utils_so_a06b036f4397d421, amb_utils_so_a06b036f4397d421)
 
 #endif /* !WANT_ONLY_DATA */
 
 #ifndef WANT_ONLY_CODE
 
-static const unsigned char prog_amb_utils_so_data_0dabcafe68084f46 [1318] =
+static const unsigned char prog_amb_utils_so_data_a06b036f4397d421 [1318] =
   "\x79\x0f\xcf\x02\x1d\x0c\xb8\x0d\x1d\xb0\x81\x88\x07\x0d\xb9\x28"
   "\x0d\xba\x28\x0d\xbb\x23\x22\x29\x22\x29\x22\x29\x21\x17\x2b\xbc"
   "\x1d\xb0\x82\x88\xb1\x28\xb2\x28\xb3\x23\x22\x29\x22\x29\x22\x29"
@@ -1729,19 +1729,19 @@ static const unsigned char prog_amb_utils_so_data_0dabcafe68084f46 [1318] =
   "\x04\x81\x83\x02\x4f\x79";
 
 SCHEME_OBJECT *
-amb_utils_so_data_0dabcafe68084f46 (entry_count_t dispatch_base)
+amb_utils_so_data_a06b036f4397d421 (entry_count_t dispatch_base)
 {
   SCHEME_OBJECT ccb;
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES_FOR_DATA ();
 
-  ccb = (unstackify (((unsigned char *) (& (prog_amb_utils_so_data_0dabcafe68084f46 [0]))), (sizeof (prog_amb_utils_so_data_0dabcafe68084f46)), dispatch_base));
+  ccb = (unstackify (((unsigned char *) (& (prog_amb_utils_so_data_a06b036f4397d421 [0]))), (sizeof (prog_amb_utils_so_data_a06b036f4397d421)), dispatch_base));
   current_block = (OBJECT_ADDRESS (ccb));
   return (& (current_block [LABEL_48]));
 }
 
-DECLARE_COMPILED_DATA_NS ("amb-utils.so", amb_utils_so_data_0dabcafe68084f46)
+DECLARE_COMPILED_DATA_NS ("amb-utils.so", amb_utils_so_data_a06b036f4397d421)
 
 #endif /* !WANT_ONLY_CODE */
 
-DECLARE_DYNAMIC_INITIALIZATION ("amb-utils.so", "f386300363cb93c4")
+DECLARE_DYNAMIC_INITIALIZATION ("amb-utils.so", "f3542de0386b4224")

@@ -1,5 +1,5 @@
 /* Emacs: this is -*- C -*- code, */
-/* generated 2017-05-03T22:03:44-04 by Liar version 4.118. */
+/* generated 2017-05-10T00:18:40-04 by Liar version 4.118. */
 
 #include "liarc.h"
 
@@ -630,7 +630,7 @@ INVOKE_PRIMITIVE_TARGET
 #ifndef WANT_ONLY_DATA
 
 SCHEME_OBJECT *
-compound_data_so_5960f1fd4fdd69a4 (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
+compound_data_so_5b4dc7a9d5fe0f6a (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
 {
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES ();
@@ -797,19 +797,19 @@ INVOKE_PRIMITIVE_TARGET
 }
 
 int
-decl_compound_data_so_5960f1fd4fdd69a4 (void)
+decl_compound_data_so_5b4dc7a9d5fe0f6a (void)
 {
   DECLARE_SUBCODE ("compound_data_so_code_1", 24, compound_data_so_code_1);
   return (0);
 }
 
-DECLARE_COMPILED_CODE ("compound-data.so", 8, decl_compound_data_so_5960f1fd4fdd69a4, compound_data_so_5960f1fd4fdd69a4)
+DECLARE_COMPILED_CODE ("compound-data.so", 8, decl_compound_data_so_5b4dc7a9d5fe0f6a, compound_data_so_5b4dc7a9d5fe0f6a)
 
 #endif /* !WANT_ONLY_DATA */
 
 #ifndef WANT_ONLY_CODE
 
-static const unsigned char prog_compound_data_so_data_5960f1fd4fdd69a4 [489] =
+static const unsigned char prog_compound_data_so_data_5b4dc7a9d5fe0f6a [489] =
   "\x4c\x03\x77\x1d\x0c\xb8\x0d\x1d\xb0\x81\x88\xc2\x0d\x0d\xb8\x0d"
   "\x0d\x24\x28\x0d\xb9\x28\xb1\x28\x0d\xb9\x28\xb1\x28\x0d\x28\xb0"
   "\x28\x0d\x23\x22\x29\x22\x29\x22\x29\x22\x29\x22\x29\x22\x29\x22"
@@ -843,19 +843,19 @@ static const unsigned char prog_compound_data_so_data_5960f1fd4fdd69a4 [489] =
   "\x83\x02\x01\x04\x81\x83\x02\x11\x21";
 
 SCHEME_OBJECT *
-compound_data_so_data_5960f1fd4fdd69a4 (entry_count_t dispatch_base)
+compound_data_so_data_5b4dc7a9d5fe0f6a (entry_count_t dispatch_base)
 {
   SCHEME_OBJECT ccb;
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES_FOR_DATA ();
 
-  ccb = (unstackify (((unsigned char *) (& (prog_compound_data_so_data_5960f1fd4fdd69a4 [0]))), (sizeof (prog_compound_data_so_data_5960f1fd4fdd69a4)), dispatch_base));
+  ccb = (unstackify (((unsigned char *) (& (prog_compound_data_so_data_5b4dc7a9d5fe0f6a [0]))), (sizeof (prog_compound_data_so_data_5b4dc7a9d5fe0f6a)), dispatch_base));
   current_block = (OBJECT_ADDRESS (ccb));
   return (& (current_block [LABEL_12]));
 }
 
-DECLARE_COMPILED_DATA_NS ("compound-data.so", compound_data_so_data_5960f1fd4fdd69a4)
+DECLARE_COMPILED_DATA_NS ("compound-data.so", compound_data_so_data_5b4dc7a9d5fe0f6a)
 
 #endif /* !WANT_ONLY_CODE */
 
-DECLARE_DYNAMIC_INITIALIZATION ("compound-data.so", "9663a47652123f80")
+DECLARE_DYNAMIC_INITIALIZATION ("compound-data.so", "1c010f53b425bc55")

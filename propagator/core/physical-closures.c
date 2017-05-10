@@ -1,5 +1,5 @@
 /* Emacs: this is -*- C -*- code, */
-/* generated 2017-05-03T22:03:44-04 by Liar version 4.118. */
+/* generated 2017-05-10T00:18:40-04 by Liar version 4.118. */
 
 #include "liarc.h"
 
@@ -1493,7 +1493,7 @@ INVOKE_INTERFACE_TARGET_1
 #ifndef WANT_ONLY_DATA
 
 SCHEME_OBJECT *
-physical_closures_so_9ab1bad1384186b3 (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
+physical_closures_so_04fd131813a3b643 (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
 {
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES ();
@@ -2513,7 +2513,7 @@ INVOKE_INTERFACE_TARGET_0
 INVOKE_PRIMITIVE_TARGET
 }
 
-static const struct liarc_code_S arr_decl_physical_closures_so_9ab1bad1384186b3 [10] =
+static const struct liarc_code_S arr_decl_physical_closures_so_04fd131813a3b643 [10] =
   {
     { "physical_closures_so_code_1", 4, physical_closures_so_code_1 },
     { "physical_closures_so_code_2", 2, physical_closures_so_code_2 },
@@ -2528,19 +2528,19 @@ static const struct liarc_code_S arr_decl_physical_closures_so_9ab1bad1384186b3 
   };
 
 int
-decl_physical_closures_so_9ab1bad1384186b3 (void)
+decl_physical_closures_so_04fd131813a3b643 (void)
 {
-  DECLARE_SUBCODE_MULTIPLE (arr_decl_physical_closures_so_9ab1bad1384186b3);
+  DECLARE_SUBCODE_MULTIPLE (arr_decl_physical_closures_so_04fd131813a3b643);
   return (0);
 }
 
-DECLARE_COMPILED_CODE ("physical-closures.so", 59, decl_physical_closures_so_9ab1bad1384186b3, physical_closures_so_9ab1bad1384186b3)
+DECLARE_COMPILED_CODE ("physical-closures.so", 59, decl_physical_closures_so_04fd131813a3b643, physical_closures_so_04fd131813a3b643)
 
 #endif /* !WANT_ONLY_DATA */
 
 #ifndef WANT_ONLY_CODE
 
-static const unsigned char prog_physical_closures_so_data_9ab1bad1384186b3 [2153] =
+static const unsigned char prog_physical_closures_so_data_04fd131813a3b643 [2153] =
   "\xbb\x01\x1c\x93\x04\x1d\x0c\xb8\x0d\x1d\xb0\x81\x88\x07\xc2\x80"
   "\xc1\x0e\xb9\x24\x22\x29\x22\x29\x22\x29\x22\x29\x21\x17\x2b\xba"
   "\x1d\xb0\x82\x88\x28\x0d\xbb\x28\x0d\x23\x22\x29\x22\x29\x21\x17"
@@ -2678,19 +2678,19 @@ static const unsigned char prog_physical_closures_so_data_9ab1bad1384186b3 [2153
   "\x02\x01\x04\x81\x83\x02\x77\xbb\x01";
 
 SCHEME_OBJECT *
-physical_closures_so_data_9ab1bad1384186b3 (entry_count_t dispatch_base)
+physical_closures_so_data_04fd131813a3b643 (entry_count_t dispatch_base)
 {
   SCHEME_OBJECT ccb;
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES_FOR_DATA ();
 
-  ccb = (unstackify (((unsigned char *) (& (prog_physical_closures_so_data_9ab1bad1384186b3 [0]))), (sizeof (prog_physical_closures_so_data_9ab1bad1384186b3)), dispatch_base));
+  ccb = (unstackify (((unsigned char *) (& (prog_physical_closures_so_data_04fd131813a3b643 [0]))), (sizeof (prog_physical_closures_so_data_04fd131813a3b643)), dispatch_base));
   current_block = (OBJECT_ADDRESS (ccb));
   return (& (current_block [LABEL_77]));
 }
 
-DECLARE_COMPILED_DATA_NS ("physical-closures.so", physical_closures_so_data_9ab1bad1384186b3)
+DECLARE_COMPILED_DATA_NS ("physical-closures.so", physical_closures_so_data_04fd131813a3b643)
 
 #endif /* !WANT_ONLY_CODE */
 
-DECLARE_DYNAMIC_INITIALIZATION ("physical-closures.so", "3f7863f6c6bc7580")
+DECLARE_DYNAMIC_INITIALIZATION ("physical-closures.so", "c70d15bdea7f1019")

@@ -1,5 +1,5 @@
 /* Emacs: this is -*- C -*- code, */
-/* generated 2017-05-03T22:03:40-04 by Liar version 4.118. */
+/* generated 2017-05-10T00:18:35-04 by Liar version 4.118. */
 
 #include "liarc.h"
 
@@ -4837,7 +4837,7 @@ INVOKE_INTERFACE_TARGET_1
 #ifndef WANT_ONLY_DATA
 
 SCHEME_OBJECT *
-application_so_9cfc50b3143fc644 (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
+application_so_2a4d4a16316163dd (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
 {
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES ();
@@ -5321,7 +5321,7 @@ INVOKE_INTERFACE_TARGET_0
 INVOKE_PRIMITIVE_TARGET
 }
 
-static const struct liarc_code_S arr_decl_application_so_9cfc50b3143fc644 [19] =
+static const struct liarc_code_S arr_decl_application_so_2a4d4a16316163dd [19] =
   {
     { "application_so_code_1", 4, application_so_code_1 },
     { "application_so_code_2", 38, application_so_code_2 },
@@ -5345,19 +5345,19 @@ static const struct liarc_code_S arr_decl_application_so_9cfc50b3143fc644 [19] =
   };
 
 int
-decl_application_so_9cfc50b3143fc644 (void)
+decl_application_so_2a4d4a16316163dd (void)
 {
-  DECLARE_SUBCODE_MULTIPLE (arr_decl_application_so_9cfc50b3143fc644);
+  DECLARE_SUBCODE_MULTIPLE (arr_decl_application_so_2a4d4a16316163dd);
   return (0);
 }
 
-DECLARE_COMPILED_CODE ("application.so", 23, decl_application_so_9cfc50b3143fc644, application_so_9cfc50b3143fc644)
+DECLARE_COMPILED_CODE ("application.so", 23, decl_application_so_2a4d4a16316163dd, application_so_2a4d4a16316163dd)
 
 #endif /* !WANT_ONLY_DATA */
 
 #ifndef WANT_ONLY_CODE
 
-static const unsigned char prog_application_so_data_9cfc50b3143fc644 [3791] =
+static const unsigned char prog_application_so_data_2a4d4a16316163dd [3791] =
   "\x82\x01\x33\xe8\x07\x1d\x0c\xb8\x0d\x1d\xb0\x81\x88\x28\x0d\xb9"
   "\x28\x0d\xba\x28\x0d\xbb\x28\x0d\xbc\x28\x0d\xbd\x23\x22\x29\x22"
   "\x29\x22\x29\x22\x29\x21\x17\x2b\xbe\x1d\xb0\x82\x88\x0d\xc1\xbf"
@@ -5597,19 +5597,19 @@ static const unsigned char prog_application_so_data_9cfc50b3143fc644 [3791] =
   "\x81\x83\x02\x02\x06\x81\x83\x02\x01\x04\x81\x83\x02\x2f\x58";
 
 SCHEME_OBJECT *
-application_so_data_9cfc50b3143fc644 (entry_count_t dispatch_base)
+application_so_data_2a4d4a16316163dd (entry_count_t dispatch_base)
 {
   SCHEME_OBJECT ccb;
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES_FOR_DATA ();
 
-  ccb = (unstackify (((unsigned char *) (& (prog_application_so_data_9cfc50b3143fc644 [0]))), (sizeof (prog_application_so_data_9cfc50b3143fc644)), dispatch_base));
+  ccb = (unstackify (((unsigned char *) (& (prog_application_so_data_2a4d4a16316163dd [0]))), (sizeof (prog_application_so_data_2a4d4a16316163dd)), dispatch_base));
   current_block = (OBJECT_ADDRESS (ccb));
   return (& (current_block [LABEL_31]));
 }
 
-DECLARE_COMPILED_DATA_NS ("application.so", application_so_data_9cfc50b3143fc644)
+DECLARE_COMPILED_DATA_NS ("application.so", application_so_data_2a4d4a16316163dd)
 
 #endif /* !WANT_ONLY_CODE */
 
-DECLARE_DYNAMIC_INITIALIZATION ("application.so", "9584b3c832d27782")
+DECLARE_DYNAMIC_INITIALIZATION ("application.so", "f997cc01c8e59159")

@@ -1,5 +1,5 @@
 /* Emacs: this is -*- C -*- code, */
-/* generated 2017-05-03T22:04:51-04 by Liar version 4.118. */
+/* generated 2017-05-10T00:19:50-04 by Liar version 4.118. */
 
 #include "liarc.h"
 
@@ -957,7 +957,7 @@ INVOKE_INTERFACE_TARGET_1
 #ifndef WANT_ONLY_DATA
 
 SCHEME_OBJECT *
-test_utils_so_e5e36fe1b944e5c6 (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
+test_utils_so_faefcefd4b401706 (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
 {
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES ();
@@ -1768,7 +1768,7 @@ INVOKE_INTERFACE_TARGET_0
 INVOKE_PRIMITIVE_TARGET
 }
 
-static const struct liarc_code_S arr_decl_test_utils_so_e5e36fe1b944e5c6 [9] =
+static const struct liarc_code_S arr_decl_test_utils_so_faefcefd4b401706 [9] =
   {
     { "test_utils_so_code_1", 3, test_utils_so_code_1 },
     { "test_utils_so_code_2", 1, test_utils_so_code_2 },
@@ -1782,19 +1782,19 @@ static const struct liarc_code_S arr_decl_test_utils_so_e5e36fe1b944e5c6 [9] =
   };
 
 int
-decl_test_utils_so_e5e36fe1b944e5c6 (void)
+decl_test_utils_so_faefcefd4b401706 (void)
 {
-  DECLARE_SUBCODE_MULTIPLE (arr_decl_test_utils_so_e5e36fe1b944e5c6);
+  DECLARE_SUBCODE_MULTIPLE (arr_decl_test_utils_so_faefcefd4b401706);
   return (0);
 }
 
-DECLARE_COMPILED_CODE ("test-utils.so", 41, decl_test_utils_so_e5e36fe1b944e5c6, test_utils_so_e5e36fe1b944e5c6)
+DECLARE_COMPILED_CODE ("test-utils.so", 41, decl_test_utils_so_faefcefd4b401706, test_utils_so_faefcefd4b401706)
 
 #endif /* !WANT_ONLY_DATA */
 
 #ifndef WANT_ONLY_CODE
 
-static const unsigned char prog_test_utils_so_data_e5e36fe1b944e5c6 [1187] =
+static const unsigned char prog_test_utils_so_data_faefcefd4b401706 [1187] =
   "\x82\x01\x0e\xbf\x02\x1d\x0c\xb8\x0d\x1d\xb0\x81\x88\x0d\x28\x0d"
   "\x28\x0d\x28\x0d\xb9\x23\x22\x29\x22\x29\x22\x29\x21\x17\x2b\xba"
   "\x1d\xb0\x82\x88\xc2\xbb\x81\x22\x29\x21\x9e\x2b\xbc\x1d\xb0\x83"
@@ -1872,19 +1872,19 @@ static const unsigned char prog_test_utils_so_data_e5e36fe1b944e5c6 [1187] =
   "\x53\x82\x01";
 
 SCHEME_OBJECT *
-test_utils_so_data_e5e36fe1b944e5c6 (entry_count_t dispatch_base)
+test_utils_so_data_faefcefd4b401706 (entry_count_t dispatch_base)
 {
   SCHEME_OBJECT ccb;
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES_FOR_DATA ();
 
-  ccb = (unstackify (((unsigned char *) (& (prog_test_utils_so_data_e5e36fe1b944e5c6 [0]))), (sizeof (prog_test_utils_so_data_e5e36fe1b944e5c6)), dispatch_base));
+  ccb = (unstackify (((unsigned char *) (& (prog_test_utils_so_data_faefcefd4b401706 [0]))), (sizeof (prog_test_utils_so_data_faefcefd4b401706)), dispatch_base));
   current_block = (OBJECT_ADDRESS (ccb));
   return (& (current_block [LABEL_52]));
 }
 
-DECLARE_COMPILED_DATA_NS ("test-utils.so", test_utils_so_data_e5e36fe1b944e5c6)
+DECLARE_COMPILED_DATA_NS ("test-utils.so", test_utils_so_data_faefcefd4b401706)
 
 #endif /* !WANT_ONLY_CODE */
 
-DECLARE_DYNAMIC_INITIALIZATION ("test-utils.so", "d6a3da61634204ed")
+DECLARE_DYNAMIC_INITIALIZATION ("test-utils.so", "9654cdc9887616d9")

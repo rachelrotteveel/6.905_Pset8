@@ -1,5 +1,5 @@
 /* Emacs: this is -*- C -*- code, */
-/* generated 2017-05-03T22:04:50-04 by Liar version 4.118. */
+/* generated 2017-05-10T00:19:49-04 by Liar version 4.118. */
 
 #include "liarc.h"
 
@@ -1062,7 +1062,7 @@ INVOKE_INTERFACE_TARGET_1
 #ifndef WANT_ONLY_DATA
 
 SCHEME_OBJECT *
-ui_so_768e68b62cdf3699 (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
+ui_so_90af113e5eafa9a0 (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
 {
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES ();
@@ -1167,7 +1167,7 @@ INVOKE_INTERFACE_TARGET_1
 INVOKE_PRIMITIVE_TARGET
 }
 
-static const struct liarc_code_S arr_decl_ui_so_768e68b62cdf3699 [9] =
+static const struct liarc_code_S arr_decl_ui_so_90af113e5eafa9a0 [9] =
   {
     { "ui_so_code_1", 3, ui_so_code_1 },
     { "ui_so_code_2", 2, ui_so_code_2 },
@@ -1181,19 +1181,19 @@ static const struct liarc_code_S arr_decl_ui_so_768e68b62cdf3699 [9] =
   };
 
 int
-decl_ui_so_768e68b62cdf3699 (void)
+decl_ui_so_90af113e5eafa9a0 (void)
 {
-  DECLARE_SUBCODE_MULTIPLE (arr_decl_ui_so_768e68b62cdf3699);
+  DECLARE_SUBCODE_MULTIPLE (arr_decl_ui_so_90af113e5eafa9a0);
   return (0);
 }
 
-DECLARE_COMPILED_CODE ("ui.so", 4, decl_ui_so_768e68b62cdf3699, ui_so_768e68b62cdf3699)
+DECLARE_COMPILED_CODE ("ui.so", 4, decl_ui_so_90af113e5eafa9a0, ui_so_90af113e5eafa9a0)
 
 #endif /* !WANT_ONLY_DATA */
 
 #ifndef WANT_ONLY_CODE
 
-static const unsigned char prog_ui_so_data_768e68b62cdf3699 [1035] =
+static const unsigned char prog_ui_so_data_90af113e5eafa9a0 [1035] =
   "\x33\x0e\xa8\x02\x1d\x0c\xb8\x0d\x1d\xb0\x81\x88\x0c\x0c\x28\x0d"
   "\x28\x0d\xb9\x23\x22\x29\x22\x29\x22\x29\x21\x17\x2b\xba\x1d\xb0"
   "\x82\x88\x1d\x0c\x1d\x28\x0d\x28\xb1\x23\x22\x29\x22\x29\x21\x17"
@@ -1261,19 +1261,19 @@ static const unsigned char prog_ui_so_data_768e68b62cdf3699 [1035] =
   "\x06\x81\x81\x02\x01\x04\x81\x83\x02\x09\x15";
 
 SCHEME_OBJECT *
-ui_so_data_768e68b62cdf3699 (entry_count_t dispatch_base)
+ui_so_data_90af113e5eafa9a0 (entry_count_t dispatch_base)
 {
   SCHEME_OBJECT ccb;
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES_FOR_DATA ();
 
-  ccb = (unstackify (((unsigned char *) (& (prog_ui_so_data_768e68b62cdf3699 [0]))), (sizeof (prog_ui_so_data_768e68b62cdf3699)), dispatch_base));
+  ccb = (unstackify (((unsigned char *) (& (prog_ui_so_data_90af113e5eafa9a0 [0]))), (sizeof (prog_ui_so_data_90af113e5eafa9a0)), dispatch_base));
   current_block = (OBJECT_ADDRESS (ccb));
   return (& (current_block [LABEL_8]));
 }
 
-DECLARE_COMPILED_DATA_NS ("ui.so", ui_so_data_768e68b62cdf3699)
+DECLARE_COMPILED_DATA_NS ("ui.so", ui_so_data_90af113e5eafa9a0)
 
 #endif /* !WANT_ONLY_CODE */
 
-DECLARE_DYNAMIC_INITIALIZATION ("ui.so", "f46e86c6b8ddc612")
+DECLARE_DYNAMIC_INITIALIZATION ("ui.so", "5b2472bc1233f119")

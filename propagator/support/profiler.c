@@ -1,5 +1,5 @@
 /* Emacs: this is -*- C -*- code, */
-/* generated 2017-05-03T21:48:55-04 by Liar version 4.118. */
+/* generated 2017-05-10T00:16:51-04 by Liar version 4.118. */
 
 #include "liarc.h"
 
@@ -4277,7 +4277,7 @@ INVOKE_PRIMITIVE_TARGET
 #ifndef WANT_ONLY_DATA
 
 SCHEME_OBJECT *
-profiler_so_53f042e012b44d58 (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
+profiler_so_ecc2f7794fd402d9 (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
 {
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES ();
@@ -4928,7 +4928,7 @@ INVOKE_INTERFACE_TARGET_1
 INVOKE_PRIMITIVE_TARGET
 }
 
-static const struct liarc_code_S arr_decl_profiler_so_53f042e012b44d58 [23] =
+static const struct liarc_code_S arr_decl_profiler_so_ecc2f7794fd402d9 [23] =
   {
     { "profiler_so_code_1", 3, profiler_so_code_1 },
     { "profiler_so_code_2", 3, profiler_so_code_2 },
@@ -4956,19 +4956,19 @@ static const struct liarc_code_S arr_decl_profiler_so_53f042e012b44d58 [23] =
   };
 
 int
-decl_profiler_so_53f042e012b44d58 (void)
+decl_profiler_so_ecc2f7794fd402d9 (void)
 {
-  DECLARE_SUBCODE_MULTIPLE (arr_decl_profiler_so_53f042e012b44d58);
+  DECLARE_SUBCODE_MULTIPLE (arr_decl_profiler_so_ecc2f7794fd402d9);
   return (0);
 }
 
-DECLARE_COMPILED_CODE ("profiler.so", 37, decl_profiler_so_53f042e012b44d58, profiler_so_53f042e012b44d58)
+DECLARE_COMPILED_CODE ("profiler.so", 37, decl_profiler_so_ecc2f7794fd402d9, profiler_so_ecc2f7794fd402d9)
 
 #endif /* !WANT_ONLY_DATA */
 
 #ifndef WANT_ONLY_CODE
 
-static const unsigned char prog_profiler_so_data_53f042e012b44d58 [3131] =
+static const unsigned char prog_profiler_so_data_ecc2f7794fd402d9 [3131] =
   "\x92\x01\x33\x82\x07\x1d\x0c\xb8\x0d\x1d\xb0\x81\x88\x80\x08\x0d"
   "\xb9\x24\x28\x0d\xba\x23\x22\x29\x22\x29\x22\x29\x21\x17\x2b\xbb"
   "\x1d\xb0\x82\x88\xc2\xbc\x1d\x28\x0d\xbd\x23\x22\x29\x22\x29\x22"
@@ -5167,19 +5167,19 @@ static const unsigned char prog_profiler_so_data_53f042e012b44d58 [3131] =
   "\x81\x83\x02\x01\x04\x81\x83\x02\x4b\x92\x01";
 
 SCHEME_OBJECT *
-profiler_so_data_53f042e012b44d58 (entry_count_t dispatch_base)
+profiler_so_data_ecc2f7794fd402d9 (entry_count_t dispatch_base)
 {
   SCHEME_OBJECT ccb;
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES_FOR_DATA ();
 
-  ccb = (unstackify (((unsigned char *) (& (prog_profiler_so_data_53f042e012b44d58 [0]))), (sizeof (prog_profiler_so_data_53f042e012b44d58)), dispatch_base));
+  ccb = (unstackify (((unsigned char *) (& (prog_profiler_so_data_ecc2f7794fd402d9 [0]))), (sizeof (prog_profiler_so_data_ecc2f7794fd402d9)), dispatch_base));
   current_block = (OBJECT_ADDRESS (ccb));
   return (& (current_block [LABEL_42]));
 }
 
-DECLARE_COMPILED_DATA_NS ("profiler.so", profiler_so_data_53f042e012b44d58)
+DECLARE_COMPILED_DATA_NS ("profiler.so", profiler_so_data_ecc2f7794fd402d9)
 
 #endif /* !WANT_ONLY_CODE */
 
-DECLARE_DYNAMIC_INITIALIZATION ("profiler.so", "d5cffa9236d836a4")
+DECLARE_DYNAMIC_INITIALIZATION ("profiler.so", "0dcd92763b878e4e")

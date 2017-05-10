@@ -1,5 +1,5 @@
 /* Emacs: this is -*- C -*- code, */
-/* generated 2017-05-03T22:03:36-04 by Liar version 4.118. */
+/* generated 2017-05-10T00:18:32-04 by Liar version 4.118. */
 
 #include "liarc.h"
 
@@ -4141,7 +4141,7 @@ INVOKE_PRIMITIVE_TARGET
 #ifndef WANT_ONLY_DATA
 
 SCHEME_OBJECT *
-cells_so_f6c51a6cc0fa27ad (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
+cells_so_b3e28234c2f8cbf3 (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
 {
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES ();
@@ -5303,7 +5303,7 @@ INVOKE_INTERFACE_TARGET_0
 INVOKE_PRIMITIVE_TARGET
 }
 
-static const struct liarc_code_S arr_decl_cells_so_f6c51a6cc0fa27ad [34] =
+static const struct liarc_code_S arr_decl_cells_so_b3e28234c2f8cbf3 [34] =
   {
     { "cells_so_code_1", 21, cells_so_code_1 },
     { "cells_so_code_2", 11, cells_so_code_2 },
@@ -5342,19 +5342,19 @@ static const struct liarc_code_S arr_decl_cells_so_f6c51a6cc0fa27ad [34] =
   };
 
 int
-decl_cells_so_f6c51a6cc0fa27ad (void)
+decl_cells_so_b3e28234c2f8cbf3 (void)
 {
-  DECLARE_SUBCODE_MULTIPLE (arr_decl_cells_so_f6c51a6cc0fa27ad);
+  DECLARE_SUBCODE_MULTIPLE (arr_decl_cells_so_b3e28234c2f8cbf3);
   return (0);
 }
 
-DECLARE_COMPILED_CODE ("cells.so", 63, decl_cells_so_f6c51a6cc0fa27ad, cells_so_f6c51a6cc0fa27ad)
+DECLARE_COMPILED_CODE ("cells.so", 63, decl_cells_so_b3e28234c2f8cbf3, cells_so_b3e28234c2f8cbf3)
 
 #endif /* !WANT_ONLY_DATA */
 
 #ifndef WANT_ONLY_CODE
 
-static const unsigned char prog_cells_so_data_f6c51a6cc0fa27ad [3682] =
+static const unsigned char prog_cells_so_data_b3e28234c2f8cbf3 [3682] =
   "\xcc\x01\x3d\xa0\x08\x1d\x0c\xb8\x0d\x1d\xb0\x81\x88\x0c\x0c\x1d"
   "\x0c\x0d\x0d\x0d\xb9\x0d\xba\x0d\xbb\x0d\xbc\x0d\xbd\x0d\xbe\x0d"
   "\xbf\x08\x0d\x1c\x0d\x1c\x24\x28\x0d\x28\x0d\x1c\x28\x1b\x28\x0d"
@@ -5588,19 +5588,19 @@ static const unsigned char prog_cells_so_data_f6c51a6cc0fa27ad [3682] =
   "\xcc\x01";
 
 SCHEME_OBJECT *
-cells_so_data_f6c51a6cc0fa27ad (entry_count_t dispatch_base)
+cells_so_data_b3e28234c2f8cbf3 (entry_count_t dispatch_base)
 {
   SCHEME_OBJECT ccb;
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES_FOR_DATA ();
 
-  ccb = (unstackify (((unsigned char *) (& (prog_cells_so_data_f6c51a6cc0fa27ad [0]))), (sizeof (prog_cells_so_data_f6c51a6cc0fa27ad)), dispatch_base));
+  ccb = (unstackify (((unsigned char *) (& (prog_cells_so_data_b3e28234c2f8cbf3 [0]))), (sizeof (prog_cells_so_data_b3e28234c2f8cbf3)), dispatch_base));
   current_block = (OBJECT_ADDRESS (ccb));
   return (& (current_block [LABEL_75]));
 }
 
-DECLARE_COMPILED_DATA_NS ("cells.so", cells_so_data_f6c51a6cc0fa27ad)
+DECLARE_COMPILED_DATA_NS ("cells.so", cells_so_data_b3e28234c2f8cbf3)
 
 #endif /* !WANT_ONLY_CODE */
 
-DECLARE_DYNAMIC_INITIALIZATION ("cells.so", "9310671ea5e79d03")
+DECLARE_DYNAMIC_INITIALIZATION ("cells.so", "70aba13f7c5d500d")

@@ -1,5 +1,5 @@
 /* Emacs: this is -*- C -*- code, */
-/* generated 2017-05-03T22:03:44-04 by Liar version 4.118. */
+/* generated 2017-05-10T00:18:39-04 by Liar version 4.118. */
 
 #include "liarc.h"
 
@@ -1947,7 +1947,7 @@ INVOKE_INTERFACE_TARGET_1
 #ifndef WANT_ONLY_DATA
 
 SCHEME_OBJECT *
-generic_definitions_so_e5a047e1369789ec (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
+generic_definitions_so_58c7cbd0dac24b25 (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
 {
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES ();
@@ -2667,7 +2667,7 @@ INVOKE_INTERFACE_TARGET_1
 INVOKE_PRIMITIVE_TARGET
 }
 
-static const struct liarc_code_S arr_decl_generic_definitions_so_e5a047e1369789ec [16] =
+static const struct liarc_code_S arr_decl_generic_definitions_so_58c7cbd0dac24b25 [16] =
   {
     { "generic_definitions_so_code_1", 5, generic_definitions_so_code_1 },
     { "generic_definitions_so_code_2", 1, generic_definitions_so_code_2 },
@@ -2688,19 +2688,19 @@ static const struct liarc_code_S arr_decl_generic_definitions_so_e5a047e1369789e
   };
 
 int
-decl_generic_definitions_so_e5a047e1369789ec (void)
+decl_generic_definitions_so_58c7cbd0dac24b25 (void)
 {
-  DECLARE_SUBCODE_MULTIPLE (arr_decl_generic_definitions_so_e5a047e1369789ec);
+  DECLARE_SUBCODE_MULTIPLE (arr_decl_generic_definitions_so_58c7cbd0dac24b25);
   return (0);
 }
 
-DECLARE_COMPILED_CODE ("generic-definitions.so", 38, decl_generic_definitions_so_e5a047e1369789ec, generic_definitions_so_e5a047e1369789ec)
+DECLARE_COMPILED_CODE ("generic-definitions.so", 38, decl_generic_definitions_so_58c7cbd0dac24b25, generic_definitions_so_58c7cbd0dac24b25)
 
 #endif /* !WANT_ONLY_DATA */
 
 #ifndef WANT_ONLY_CODE
 
-static const unsigned char prog_generic_definitions_so_data_e5a047e1369789ec [1478] =
+static const unsigned char prog_generic_definitions_so_data_58c7cbd0dac24b25 [1478] =
   "\x7b\x19\xe3\x03\x1d\x0c\xb8\x0d\x1d\xb0\x81\x88\x28\x0d\xb9\x28"
   "\x0d\xba\x28\x0d\x23\x22\x29\x22\x29\x22\x29\x22\x29\x22\x29\x21"
   "\x17\x2b\xbb\x1d\xb0\x82\x88\x0d\x22\x29\x21\x9d\x2b\xbc\x1d\xb0"
@@ -2796,19 +2796,19 @@ static const unsigned char prog_generic_definitions_so_data_e5a047e1369789ec [14
   "\x04\x81\x83\x02\x4d\x7b";
 
 SCHEME_OBJECT *
-generic_definitions_so_data_e5a047e1369789ec (entry_count_t dispatch_base)
+generic_definitions_so_data_58c7cbd0dac24b25 (entry_count_t dispatch_base)
 {
   SCHEME_OBJECT ccb;
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES_FOR_DATA ();
 
-  ccb = (unstackify (((unsigned char *) (& (prog_generic_definitions_so_data_e5a047e1369789ec [0]))), (sizeof (prog_generic_definitions_so_data_e5a047e1369789ec)), dispatch_base));
+  ccb = (unstackify (((unsigned char *) (& (prog_generic_definitions_so_data_58c7cbd0dac24b25 [0]))), (sizeof (prog_generic_definitions_so_data_58c7cbd0dac24b25)), dispatch_base));
   current_block = (OBJECT_ADDRESS (ccb));
   return (& (current_block [LABEL_45]));
 }
 
-DECLARE_COMPILED_DATA_NS ("generic-definitions.so", generic_definitions_so_data_e5a047e1369789ec)
+DECLARE_COMPILED_DATA_NS ("generic-definitions.so", generic_definitions_so_data_58c7cbd0dac24b25)
 
 #endif /* !WANT_ONLY_CODE */
 
-DECLARE_DYNAMIC_INITIALIZATION ("generic-definitions.so", "8712f2ad23debf92")
+DECLARE_DYNAMIC_INITIALIZATION ("generic-definitions.so", "47eb45c2d64230d3")

@@ -1,5 +1,5 @@
 /* Emacs: this is -*- C -*- code, */
-/* generated 2017-05-03T22:03:46-04 by Liar version 4.118. */
+/* generated 2017-05-10T00:18:41-04 by Liar version 4.118. */
 
 #include "liarc.h"
 
@@ -6146,7 +6146,7 @@ INVOKE_INTERFACE_TARGET_1
 #ifndef WANT_ONLY_DATA
 
 SCHEME_OBJECT *
-standard_propagators_so_41cd55fb7e5db8f2 (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
+standard_propagators_so_0587bed17733b827 (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
 {
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES ();
@@ -17585,7 +17585,7 @@ INVOKE_INTERFACE_TARGET_1
 INVOKE_PRIMITIVE_TARGET
 }
 
-static const struct liarc_code_S arr_decl_standard_propagators_so_41cd55fb7e5db8f2 [39] =
+static const struct liarc_code_S arr_decl_standard_propagators_so_0587bed17733b827 [39] =
   {
     { "standard_propagators_so_code_1", 4, standard_propagators_so_code_1 },
     { "standard_propagators_so_code_2", 5, standard_propagators_so_code_2 },
@@ -17629,19 +17629,19 @@ static const struct liarc_code_S arr_decl_standard_propagators_so_41cd55fb7e5db8
   };
 
 int
-decl_standard_propagators_so_41cd55fb7e5db8f2 (void)
+decl_standard_propagators_so_0587bed17733b827 (void)
 {
-  DECLARE_SUBCODE_MULTIPLE (arr_decl_standard_propagators_so_41cd55fb7e5db8f2);
+  DECLARE_SUBCODE_MULTIPLE (arr_decl_standard_propagators_so_0587bed17733b827);
   return (0);
 }
 
-DECLARE_COMPILED_CODE ("standard-propagators.so", 812, decl_standard_propagators_so_41cd55fb7e5db8f2, standard_propagators_so_41cd55fb7e5db8f2)
+DECLARE_COMPILED_CODE ("standard-propagators.so", 812, decl_standard_propagators_so_0587bed17733b827, standard_propagators_so_0587bed17733b827)
 
 #endif /* !WANT_ONLY_DATA */
 
 #ifndef WANT_ONLY_CODE
 
-static const unsigned char prog_standard_propagators_so_data_41cd55fb7e5db8f2 [12980] =
+static const unsigned char prog_standard_propagators_so_data_0587bed17733b827 [12980] =
   "\x87\x10\x8b\x01\xc6\x19\x1d\x0c\xb8\x0d\x1d\xb0\x81\x88\x0d\xb9"
   "\x0d\xba\x08\x28\xb1\x28\x0d\xb9\x28\x0d\x23\x22\x29\x22\x29\x22"
   "\x29\x22\x29\x21\x17\x2b\xbb\x1d\xb0\x82\x88\x0d\x08\x0d\x28\x0d"
@@ -18456,19 +18456,19 @@ static const unsigned char prog_standard_propagators_so_data_41cd55fb7e5db8f2 [1
   "\xd9\x0c\x87\x10";
 
 SCHEME_OBJECT *
-standard_propagators_so_data_41cd55fb7e5db8f2 (entry_count_t dispatch_base)
+standard_propagators_so_data_0587bed17733b827 (entry_count_t dispatch_base)
 {
   SCHEME_OBJECT ccb;
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES_FOR_DATA ();
 
-  ccb = (unstackify (((unsigned char *) (& (prog_standard_propagators_so_data_41cd55fb7e5db8f2 [0]))), (sizeof (prog_standard_propagators_so_data_41cd55fb7e5db8f2)), dispatch_base));
+  ccb = (unstackify (((unsigned char *) (& (prog_standard_propagators_so_data_0587bed17733b827 [0]))), (sizeof (prog_standard_propagators_so_data_0587bed17733b827)), dispatch_base));
   current_block = (OBJECT_ADDRESS (ccb));
   return (& (current_block [LABEL_831]));
 }
 
-DECLARE_COMPILED_DATA_NS ("standard-propagators.so", standard_propagators_so_data_41cd55fb7e5db8f2)
+DECLARE_COMPILED_DATA_NS ("standard-propagators.so", standard_propagators_so_data_0587bed17733b827)
 
 #endif /* !WANT_ONLY_CODE */
 
-DECLARE_DYNAMIC_INITIALIZATION ("standard-propagators.so", "5c26c49c0c873b4f")
+DECLARE_DYNAMIC_INITIALIZATION ("standard-propagators.so", "79fc8933a40fc36f")

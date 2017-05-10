@@ -1,5 +1,5 @@
 /* Emacs: this is -*- C -*- code, */
-/* generated 2017-05-03T22:03:41-04 by Liar version 4.118. */
+/* generated 2017-05-10T00:18:37-04 by Liar version 4.118. */
 
 #include "liarc.h"
 
@@ -14804,7 +14804,7 @@ INVOKE_PRIMITIVE_TARGET
 #ifndef WANT_ONLY_DATA
 
 SCHEME_OBJECT *
-sugar_so_56b1307eccef01c6 (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
+sugar_so_f214888950cab95f (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
 {
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES ();
@@ -15916,7 +15916,7 @@ INVOKE_INTERFACE_TARGET_1
 INVOKE_PRIMITIVE_TARGET
 }
 
-static const struct liarc_code_S arr_decl_sugar_so_56b1307eccef01c6 [22] =
+static const struct liarc_code_S arr_decl_sugar_so_f214888950cab95f [22] =
   {
     { "sugar_so_code_1", 24, sugar_so_code_1 },
     { "sugar_so_code_2", 25, sugar_so_code_2 },
@@ -15943,19 +15943,19 @@ static const struct liarc_code_S arr_decl_sugar_so_56b1307eccef01c6 [22] =
   };
 
 int
-decl_sugar_so_56b1307eccef01c6 (void)
+decl_sugar_so_f214888950cab95f (void)
 {
-  DECLARE_SUBCODE_MULTIPLE (arr_decl_sugar_so_56b1307eccef01c6);
+  DECLARE_SUBCODE_MULTIPLE (arr_decl_sugar_so_f214888950cab95f);
   return (0);
 }
 
-DECLARE_COMPILED_CODE ("sugar.so", 67, decl_sugar_so_56b1307eccef01c6, sugar_so_56b1307eccef01c6)
+DECLARE_COMPILED_CODE ("sugar.so", 67, decl_sugar_so_f214888950cab95f, sugar_so_f214888950cab95f)
 
 #endif /* !WANT_ONLY_DATA */
 
 #ifndef WANT_ONLY_CODE
 
-static const unsigned char prog_sugar_so_data_56b1307eccef01c6 [6537] =
+static const unsigned char prog_sugar_so_data_f214888950cab95f [6537] =
   "\xc6\x01\x2c\xa3\x0d\x1d\x0c\xb8\x0d\x1d\xb0\x81\x88\x0d\xb9\x0d"
   "\xba\x0d\x06\x07\x08\xc1\xbb\xc1\xbc\x28\x0d\xbd\x23\x22\x29\x22"
   "\x29\x22\x29\x22\x29\x22\x29\x22\x29\x22\x29\x22\x29\x22\x29\x22"
@@ -16367,19 +16367,19 @@ static const unsigned char prog_sugar_so_data_56b1307eccef01c6 [6537] =
   "\x01\x04\x81\x83\x02\x87\x01\xc6\x01";
 
 SCHEME_OBJECT *
-sugar_so_data_56b1307eccef01c6 (entry_count_t dispatch_base)
+sugar_so_data_f214888950cab95f (entry_count_t dispatch_base)
 {
   SCHEME_OBJECT ccb;
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES_FOR_DATA ();
 
-  ccb = (unstackify (((unsigned char *) (& (prog_sugar_so_data_56b1307eccef01c6 [0]))), (sizeof (prog_sugar_so_data_56b1307eccef01c6)), dispatch_base));
+  ccb = (unstackify (((unsigned char *) (& (prog_sugar_so_data_f214888950cab95f [0]))), (sizeof (prog_sugar_so_data_f214888950cab95f)), dispatch_base));
   current_block = (OBJECT_ADDRESS (ccb));
   return (& (current_block [LABEL_74]));
 }
 
-DECLARE_COMPILED_DATA_NS ("sugar.so", sugar_so_data_56b1307eccef01c6)
+DECLARE_COMPILED_DATA_NS ("sugar.so", sugar_so_data_f214888950cab95f)
 
 #endif /* !WANT_ONLY_CODE */
 
-DECLARE_DYNAMIC_INITIALIZATION ("sugar.so", "231bb64e4f884dce")
+DECLARE_DYNAMIC_INITIALIZATION ("sugar.so", "b0201ee6e7648740")

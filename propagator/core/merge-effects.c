@@ -1,5 +1,5 @@
 /* Emacs: this is -*- C -*- code, */
-/* generated 2017-05-03T22:03:35-04 by Liar version 4.118. */
+/* generated 2017-05-10T00:18:31-04 by Liar version 4.118. */
 
 #include "liarc.h"
 
@@ -2070,7 +2070,7 @@ INVOKE_PRIMITIVE_TARGET
 #ifndef WANT_ONLY_DATA
 
 SCHEME_OBJECT *
-merge_effects_so_1e4505c11d0699ed (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
+merge_effects_so_122a2151b0e69d3b (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
 {
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES ();
@@ -2406,7 +2406,7 @@ INVOKE_INTERFACE_TARGET_0
 INVOKE_PRIMITIVE_TARGET
 }
 
-static const struct liarc_code_S arr_decl_merge_effects_so_1e4505c11d0699ed [14] =
+static const struct liarc_code_S arr_decl_merge_effects_so_122a2151b0e69d3b [14] =
   {
     { "merge_effects_so_code_1", 1, merge_effects_so_code_1 },
     { "merge_effects_so_code_2", 1, merge_effects_so_code_2 },
@@ -2425,19 +2425,19 @@ static const struct liarc_code_S arr_decl_merge_effects_so_1e4505c11d0699ed [14]
   };
 
 int
-decl_merge_effects_so_1e4505c11d0699ed (void)
+decl_merge_effects_so_122a2151b0e69d3b (void)
 {
-  DECLARE_SUBCODE_MULTIPLE (arr_decl_merge_effects_so_1e4505c11d0699ed);
+  DECLARE_SUBCODE_MULTIPLE (arr_decl_merge_effects_so_122a2151b0e69d3b);
   return (0);
 }
 
-DECLARE_COMPILED_CODE ("merge-effects.so", 16, decl_merge_effects_so_1e4505c11d0699ed, merge_effects_so_1e4505c11d0699ed)
+DECLARE_COMPILED_CODE ("merge-effects.so", 16, decl_merge_effects_so_122a2151b0e69d3b, merge_effects_so_122a2151b0e69d3b)
 
 #endif /* !WANT_ONLY_DATA */
 
 #ifndef WANT_ONLY_CODE
 
-static const unsigned char prog_merge_effects_so_data_1e4505c11d0699ed [1502] =
+static const unsigned char prog_merge_effects_so_data_122a2151b0e69d3b [1502] =
   "\x42\x1b\xcd\x03\x1d\x0c\xb8\x0d\x1d\xb0\x81\x88\xc2\xb9\x81\x22"
   "\x29\x21\x9e\x2b\xba\x1d\xb0\x82\x88\xb1\x82\x22\x29\x21\x9e\x2b"
   "\xbb\x1d\xb0\x83\x88\xc3\xbc\x1d\x81\x22\x29\x21\x9f\x2b\xbd\x1d"
@@ -2534,19 +2534,19 @@ static const unsigned char prog_merge_effects_so_data_1e4505c11d0699ed [1502] =
   "\x85\x02\x02\x06\x81\x87\x02\x01\x04\x81\x83\x02\x21\x42";
 
 SCHEME_OBJECT *
-merge_effects_so_data_1e4505c11d0699ed (entry_count_t dispatch_base)
+merge_effects_so_data_122a2151b0e69d3b (entry_count_t dispatch_base)
 {
   SCHEME_OBJECT ccb;
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES_FOR_DATA ();
 
-  ccb = (unstackify (((unsigned char *) (& (prog_merge_effects_so_data_1e4505c11d0699ed [0]))), (sizeof (prog_merge_effects_so_data_1e4505c11d0699ed)), dispatch_base));
+  ccb = (unstackify (((unsigned char *) (& (prog_merge_effects_so_data_122a2151b0e69d3b [0]))), (sizeof (prog_merge_effects_so_data_122a2151b0e69d3b)), dispatch_base));
   current_block = (OBJECT_ADDRESS (ccb));
   return (& (current_block [LABEL_24]));
 }
 
-DECLARE_COMPILED_DATA_NS ("merge-effects.so", merge_effects_so_data_1e4505c11d0699ed)
+DECLARE_COMPILED_DATA_NS ("merge-effects.so", merge_effects_so_data_122a2151b0e69d3b)
 
 #endif /* !WANT_ONLY_CODE */
 
-DECLARE_DYNAMIC_INITIALIZATION ("merge-effects.so", "0a4441fb30bf4a03")
+DECLARE_DYNAMIC_INITIALIZATION ("merge-effects.so", "19def3525fa88e73")

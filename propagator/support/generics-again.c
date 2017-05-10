@@ -1,5 +1,5 @@
 /* Emacs: this is -*- C -*- code, */
-/* generated 2017-05-03T21:48:58-04 by Liar version 4.118. */
+/* generated 2017-05-10T00:16:53-04 by Liar version 4.118. */
 
 #include "liarc.h"
 
@@ -8991,7 +8991,7 @@ INVOKE_PRIMITIVE_TARGET
 #ifndef WANT_ONLY_DATA
 
 SCHEME_OBJECT *
-generics_again_so_c0d9af9dba85b4ad (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
+generics_again_so_4a094b165bb0758b (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
 {
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES ();
@@ -9770,7 +9770,7 @@ INVOKE_INTERFACE_TARGET_0
 INVOKE_PRIMITIVE_TARGET
 }
 
-static const struct liarc_code_S arr_decl_generics_again_so_c0d9af9dba85b4ad [41] =
+static const struct liarc_code_S arr_decl_generics_again_so_4a094b165bb0758b [41] =
   {
     { "generics_again_so_code_1", 6, generics_again_so_code_1 },
     { "generics_again_so_code_2", 2, generics_again_so_code_2 },
@@ -9816,19 +9816,19 @@ static const struct liarc_code_S arr_decl_generics_again_so_c0d9af9dba85b4ad [41
   };
 
 int
-decl_generics_again_so_c0d9af9dba85b4ad (void)
+decl_generics_again_so_4a094b165bb0758b (void)
 {
-  DECLARE_SUBCODE_MULTIPLE (arr_decl_generics_again_so_c0d9af9dba85b4ad);
+  DECLARE_SUBCODE_MULTIPLE (arr_decl_generics_again_so_4a094b165bb0758b);
   return (0);
 }
 
-DECLARE_COMPILED_CODE ("generics-again.so", 41, decl_generics_again_so_c0d9af9dba85b4ad, generics_again_so_c0d9af9dba85b4ad)
+DECLARE_COMPILED_CODE ("generics-again.so", 41, decl_generics_again_so_4a094b165bb0758b, generics_again_so_4a094b165bb0758b)
 
 #endif /* !WANT_ONLY_DATA */
 
 #ifndef WANT_ONLY_CODE
 
-static const unsigned char prog_generics_again_so_data_c0d9af9dba85b4ad [5872] =
+static const unsigned char prog_generics_again_so_data_4a094b165bb0758b [5872] =
   "\x8c\x01\x4d\x8b\x0c\x1d\x0c\xb8\x0d\x1d\xb0\x81\x88\x1d\x0d\xb9"
   "\x28\x0d\x28\x0d\xba\x28\x0d\x28\x0d\xbb\x28\x0d\xbc\x23\x22\x29"
   "\x22\x29\x22\x29\x22\x29\x22\x29\x22\x29\x21\x17\x2b\xbd\x1d\xb0"
@@ -10198,19 +10198,19 @@ static const unsigned char prog_generics_again_so_data_c0d9af9dba85b4ad [5872] =
   "\x81\x85\x02\x02\x06\x81\x83\x02\x01\x04\x81\x83\x02\x53\x8c\x01";
 
 SCHEME_OBJECT *
-generics_again_so_data_c0d9af9dba85b4ad (entry_count_t dispatch_base)
+generics_again_so_data_4a094b165bb0758b (entry_count_t dispatch_base)
 {
   SCHEME_OBJECT ccb;
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES_FOR_DATA ();
 
-  ccb = (unstackify (((unsigned char *) (& (prog_generics_again_so_data_c0d9af9dba85b4ad [0]))), (sizeof (prog_generics_again_so_data_c0d9af9dba85b4ad)), dispatch_base));
+  ccb = (unstackify (((unsigned char *) (& (prog_generics_again_so_data_4a094b165bb0758b [0]))), (sizeof (prog_generics_again_so_data_4a094b165bb0758b)), dispatch_base));
   current_block = (OBJECT_ADDRESS (ccb));
   return (& (current_block [LABEL_51]));
 }
 
-DECLARE_COMPILED_DATA_NS ("generics-again.so", generics_again_so_data_c0d9af9dba85b4ad)
+DECLARE_COMPILED_DATA_NS ("generics-again.so", generics_again_so_data_4a094b165bb0758b)
 
 #endif /* !WANT_ONLY_CODE */
 
-DECLARE_DYNAMIC_INITIALIZATION ("generics-again.so", "fba85de3927011e5")
+DECLARE_DYNAMIC_INITIALIZATION ("generics-again.so", "6d3c75ebd6ce9f85")

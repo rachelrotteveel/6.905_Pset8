@@ -1,5 +1,5 @@
 /* Emacs: this is -*- C -*- code, */
-/* generated 2017-05-03T22:04:43-04 by Liar version 4.118. */
+/* generated 2017-05-10T00:19:42-04 by Liar version 4.118. */
 
 #include "liarc.h"
 
@@ -2575,7 +2575,7 @@ INVOKE_INTERFACE_TARGET_1
 #ifndef WANT_ONLY_DATA
 
 SCHEME_OBJECT *
-carrying_cells_so_992472d38a563074 (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
+carrying_cells_so_b27b7ab98752d566 (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
 {
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES ();
@@ -4918,7 +4918,7 @@ INVOKE_INTERFACE_TARGET_1
 INVOKE_PRIMITIVE_TARGET
 }
 
-static const struct liarc_code_S arr_decl_carrying_cells_so_992472d38a563074 [9] =
+static const struct liarc_code_S arr_decl_carrying_cells_so_b27b7ab98752d566 [9] =
   {
     { "carrying_cells_so_code_1", 13, carrying_cells_so_code_1 },
     { "carrying_cells_so_code_2", 9, carrying_cells_so_code_2 },
@@ -4932,19 +4932,19 @@ static const struct liarc_code_S arr_decl_carrying_cells_so_992472d38a563074 [9]
   };
 
 int
-decl_carrying_cells_so_992472d38a563074 (void)
+decl_carrying_cells_so_b27b7ab98752d566 (void)
 {
-  DECLARE_SUBCODE_MULTIPLE (arr_decl_carrying_cells_so_992472d38a563074);
+  DECLARE_SUBCODE_MULTIPLE (arr_decl_carrying_cells_so_b27b7ab98752d566);
   return (0);
 }
 
-DECLARE_COMPILED_CODE ("carrying-cells.so", 157, decl_carrying_cells_so_992472d38a563074, carrying_cells_so_992472d38a563074)
+DECLARE_COMPILED_CODE ("carrying-cells.so", 157, decl_carrying_cells_so_b27b7ab98752d566, carrying_cells_so_b27b7ab98752d566)
 
 #endif /* !WANT_ONLY_DATA */
 
 #ifndef WANT_ONLY_CODE
 
-static const unsigned char prog_carrying_cells_so_data_992472d38a563074 [3675] =
+static const unsigned char prog_carrying_cells_so_data_b27b7ab98752d566 [3675] =
   "\xad\x03\x20\xda\x06\x1d\x0c\xb8\x0d\x1d\xb0\x81\x88\xc1\xb9\xc2"
   "\x0d\xba\x24\x28\x0d\xbb\x28\x0d\x28\x0d\x28\x0d\xbc\x28\xb2\x28"
   "\x0d\x28\x0d\x28\x0d\x23\x22\x29\x22\x29\x22\x29\x22\x29\x22\x29"
@@ -5177,19 +5177,19 @@ static const unsigned char prog_carrying_cells_so_data_992472d38a563074 [3675] =
   "\x83\x02\x01\x04\x81\x83\x02\xbb\x02\xad\x03";
 
 SCHEME_OBJECT *
-carrying_cells_so_data_992472d38a563074 (entry_count_t dispatch_base)
+carrying_cells_so_data_b27b7ab98752d566 (entry_count_t dispatch_base)
 {
   SCHEME_OBJECT ccb;
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES_FOR_DATA ();
 
-  ccb = (unstackify (((unsigned char *) (& (prog_carrying_cells_so_data_992472d38a563074 [0]))), (sizeof (prog_carrying_cells_so_data_992472d38a563074)), dispatch_base));
+  ccb = (unstackify (((unsigned char *) (& (prog_carrying_cells_so_data_b27b7ab98752d566 [0]))), (sizeof (prog_carrying_cells_so_data_b27b7ab98752d566)), dispatch_base));
   current_block = (OBJECT_ADDRESS (ccb));
   return (& (current_block [LABEL_172]));
 }
 
-DECLARE_COMPILED_DATA_NS ("carrying-cells.so", carrying_cells_so_data_992472d38a563074)
+DECLARE_COMPILED_DATA_NS ("carrying-cells.so", carrying_cells_so_data_b27b7ab98752d566)
 
 #endif /* !WANT_ONLY_CODE */
 
-DECLARE_DYNAMIC_INITIALIZATION ("carrying-cells.so", "ecbc6903e77b1467")
+DECLARE_DYNAMIC_INITIALIZATION ("carrying-cells.so", "fbedd71f24d63e87")

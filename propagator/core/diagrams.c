@@ -1,5 +1,5 @@
 /* Emacs: this is -*- C -*- code, */
-/* generated 2017-05-03T22:03:34-04 by Liar version 4.118. */
+/* generated 2017-05-10T00:18:29-04 by Liar version 4.118. */
 
 #include "liarc.h"
 
@@ -8178,7 +8178,7 @@ INVOKE_INTERFACE_TARGET_1
 #ifndef WANT_ONLY_DATA
 
 SCHEME_OBJECT *
-diagrams_so_7905eac5d5c66155 (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
+diagrams_so_3fa35fd085098d51 (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
 {
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES ();
@@ -9642,7 +9642,7 @@ INVOKE_INTERFACE_TARGET_0
 INVOKE_PRIMITIVE_TARGET
 }
 
-static const struct liarc_code_S arr_decl_diagrams_so_7905eac5d5c66155 [54] =
+static const struct liarc_code_S arr_decl_diagrams_so_3fa35fd085098d51 [54] =
   {
     { "diagrams_so_code_1", 3, diagrams_so_code_1 },
     { "diagrams_so_code_2", 4, diagrams_so_code_2 },
@@ -9701,19 +9701,19 @@ static const struct liarc_code_S arr_decl_diagrams_so_7905eac5d5c66155 [54] =
   };
 
 int
-decl_diagrams_so_7905eac5d5c66155 (void)
+decl_diagrams_so_3fa35fd085098d51 (void)
 {
-  DECLARE_SUBCODE_MULTIPLE (arr_decl_diagrams_so_7905eac5d5c66155);
+  DECLARE_SUBCODE_MULTIPLE (arr_decl_diagrams_so_3fa35fd085098d51);
   return (0);
 }
 
-DECLARE_COMPILED_CODE ("diagrams.so", 73, decl_diagrams_so_7905eac5d5c66155, diagrams_so_7905eac5d5c66155)
+DECLARE_COMPILED_CODE ("diagrams.so", 73, decl_diagrams_so_3fa35fd085098d51, diagrams_so_3fa35fd085098d51)
 
 #endif /* !WANT_ONLY_DATA */
 
 #ifndef WANT_ONLY_CODE
 
-static const unsigned char prog_diagrams_so_data_7905eac5d5c66155 [6935] =
+static const unsigned char prog_diagrams_so_data_3fa35fd085098d51 [6935] =
   "\xe9\x01\x74\xdb\x0f\x1d\x0c\xb8\x0d\x1d\xb0\x81\x88\x08\x28\x0d"
   "\xb9\x28\x0d\xba\x23\x22\x29\x22\x29\x22\x29\x21\x17\x2b\xbb\x1d"
   "\xb0\x82\x88\x07\xc2\xbc\x80\xc1\xbd\x0e\xbe\x24\x22\x29\x22\x29"
@@ -10150,19 +10150,19 @@ static const unsigned char prog_diagrams_so_data_7905eac5d5c66155 [6935] =
   "\x81\x83\x02\x93\x01\xe9\x01";
 
 SCHEME_OBJECT *
-diagrams_so_data_7905eac5d5c66155 (entry_count_t dispatch_base)
+diagrams_so_data_3fa35fd085098d51 (entry_count_t dispatch_base)
 {
   SCHEME_OBJECT ccb;
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES_FOR_DATA ();
 
-  ccb = (unstackify (((unsigned char *) (& (prog_diagrams_so_data_7905eac5d5c66155 [0]))), (sizeof (prog_diagrams_so_data_7905eac5d5c66155)), dispatch_base));
+  ccb = (unstackify (((unsigned char *) (& (prog_diagrams_so_data_3fa35fd085098d51 [0]))), (sizeof (prog_diagrams_so_data_3fa35fd085098d51)), dispatch_base));
   current_block = (OBJECT_ADDRESS (ccb));
   return (& (current_block [LABEL_92]));
 }
 
-DECLARE_COMPILED_DATA_NS ("diagrams.so", diagrams_so_data_7905eac5d5c66155)
+DECLARE_COMPILED_DATA_NS ("diagrams.so", diagrams_so_data_3fa35fd085098d51)
 
 #endif /* !WANT_ONLY_CODE */
 
-DECLARE_DYNAMIC_INITIALIZATION ("diagrams.so", "13262fa42ae212ab")
+DECLARE_DYNAMIC_INITIALIZATION ("diagrams.so", "3dae13a34ed14218")

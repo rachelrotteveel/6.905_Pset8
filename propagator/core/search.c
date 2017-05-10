@@ -1,5 +1,5 @@
 /* Emacs: this is -*- C -*- code, */
-/* generated 2017-05-03T22:04:49-04 by Liar version 4.118. */
+/* generated 2017-05-10T00:19:48-04 by Liar version 4.118. */
 
 #include "liarc.h"
 
@@ -2115,7 +2115,7 @@ INVOKE_INTERFACE_TARGET_0
 #ifndef WANT_ONLY_DATA
 
 SCHEME_OBJECT *
-search_so_09756f9605802701 (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
+search_so_59ca4ed1a1ce075f (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
 {
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES ();
@@ -2565,7 +2565,7 @@ INVOKE_INTERFACE_TARGET_0
 INVOKE_PRIMITIVE_TARGET
 }
 
-static const struct liarc_code_S arr_decl_search_so_09756f9605802701 [6] =
+static const struct liarc_code_S arr_decl_search_so_59ca4ed1a1ce075f [6] =
   {
     { "search_so_code_1", 40, search_so_code_1 },
     { "search_so_code_2", 4, search_so_code_2 },
@@ -2576,19 +2576,19 @@ static const struct liarc_code_S arr_decl_search_so_09756f9605802701 [6] =
   };
 
 int
-decl_search_so_09756f9605802701 (void)
+decl_search_so_59ca4ed1a1ce075f (void)
 {
-  DECLARE_SUBCODE_MULTIPLE (arr_decl_search_so_09756f9605802701);
+  DECLARE_SUBCODE_MULTIPLE (arr_decl_search_so_59ca4ed1a1ce075f);
   return (0);
 }
 
-DECLARE_COMPILED_CODE ("search.so", 18, decl_search_so_09756f9605802701, search_so_09756f9605802701)
+DECLARE_COMPILED_CODE ("search.so", 18, decl_search_so_59ca4ed1a1ce075f, search_so_59ca4ed1a1ce075f)
 
 #endif /* !WANT_ONLY_DATA */
 
 #ifndef WANT_ONLY_CODE
 
-static const unsigned char prog_search_so_data_09756f9605802701 [1876] =
+static const unsigned char prog_search_so_data_59ca4ed1a1ce075f [1876] =
   "\x8d\x01\x12\xbb\x03\x1d\x0c\xb8\x0d\x1d\xb0\x81\x88\x07\x0d\x0d"
   "\x0d\x08\x0d\x0d\x0d\x0d\x0d\xb9\x0d\xba\x0d\xbb\x24\x28\x0d\x28"
   "\x0d\x28\x0d\x28\x0d\x28\x0d\xbc\x28\x0d\x28\x0d\x28\x0d\xbd\x28"
@@ -2709,19 +2709,19 @@ static const unsigned char prog_search_so_data_09756f9605802701 [1876] =
   "\x83\x02\x25\x40";
 
 SCHEME_OBJECT *
-search_so_data_09756f9605802701 (entry_count_t dispatch_base)
+search_so_data_59ca4ed1a1ce075f (entry_count_t dispatch_base)
 {
   SCHEME_OBJECT ccb;
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES_FOR_DATA ();
 
-  ccb = (unstackify (((unsigned char *) (& (prog_search_so_data_09756f9605802701 [0]))), (sizeof (prog_search_so_data_09756f9605802701)), dispatch_base));
+  ccb = (unstackify (((unsigned char *) (& (prog_search_so_data_59ca4ed1a1ce075f [0]))), (sizeof (prog_search_so_data_59ca4ed1a1ce075f)), dispatch_base));
   current_block = (OBJECT_ADDRESS (ccb));
   return (& (current_block [LABEL_27]));
 }
 
-DECLARE_COMPILED_DATA_NS ("search.so", search_so_data_09756f9605802701)
+DECLARE_COMPILED_DATA_NS ("search.so", search_so_data_59ca4ed1a1ce075f)
 
 #endif /* !WANT_ONLY_CODE */
 
-DECLARE_DYNAMIC_INITIALIZATION ("search.so", "2ed05c18f8e32c6f")
+DECLARE_DYNAMIC_INITIALIZATION ("search.so", "b48828987415d8a1")

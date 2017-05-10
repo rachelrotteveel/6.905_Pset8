@@ -1,5 +1,5 @@
 /* Emacs: this is -*- C -*- code, */
-/* generated 2017-05-03T22:04:47-04 by Liar version 4.118. */
+/* generated 2017-05-10T00:19:46-04 by Liar version 4.118. */
 
 #include "liarc.h"
 
@@ -3135,7 +3135,7 @@ INVOKE_INTERFACE_TARGET_1
 #ifndef WANT_ONLY_DATA
 
 SCHEME_OBJECT *
-supported_values_so_2948a9b5f7387814 (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
+supported_values_so_d12c7ed1cf59b855 (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
 {
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES ();
@@ -5169,7 +5169,7 @@ INVOKE_INTERFACE_TARGET_1
 INVOKE_PRIMITIVE_TARGET
 }
 
-static const struct liarc_code_S arr_decl_supported_values_so_2948a9b5f7387814 [21] =
+static const struct liarc_code_S arr_decl_supported_values_so_d12c7ed1cf59b855 [21] =
   {
     { "supported_values_so_code_1", 21, supported_values_so_code_1 },
     { "supported_values_so_code_2", 1, supported_values_so_code_2 },
@@ -5195,19 +5195,19 @@ static const struct liarc_code_S arr_decl_supported_values_so_2948a9b5f7387814 [
   };
 
 int
-decl_supported_values_so_2948a9b5f7387814 (void)
+decl_supported_values_so_d12c7ed1cf59b855 (void)
 {
-  DECLARE_SUBCODE_MULTIPLE (arr_decl_supported_values_so_2948a9b5f7387814);
+  DECLARE_SUBCODE_MULTIPLE (arr_decl_supported_values_so_d12c7ed1cf59b855);
   return (0);
 }
 
-DECLARE_COMPILED_CODE ("supported-values.so", 117, decl_supported_values_so_2948a9b5f7387814, supported_values_so_2948a9b5f7387814)
+DECLARE_COMPILED_CODE ("supported-values.so", 117, decl_supported_values_so_d12c7ed1cf59b855, supported_values_so_d12c7ed1cf59b855)
 
 #endif /* !WANT_ONLY_DATA */
 
 #ifndef WANT_ONLY_CODE
 
-static const unsigned char prog_supported_values_so_data_2948a9b5f7387814 [4082] =
+static const unsigned char prog_supported_values_so_data_d12c7ed1cf59b855 [4082] =
   "\xe1\x02\x28\xf8\x07\x1d\x0c\xb8\x0d\x1d\xb0\x81\x88\x06\x07\x85"
   "\xc2\x02\x83\x0c\x0c\x84\xc1\xb9\x82\x0c\xc2\xba\x81\x0c\x0d\xbb"
   "\x24\x28\x0d\x28\x0d\x28\x0d\x28\x0d\xbc\x28\x0d\x28\xb3\x23\x22"
@@ -5466,19 +5466,19 @@ static const unsigned char prog_supported_values_so_data_2948a9b5f7387814 [4082]
   "\xe1\x02";
 
 SCHEME_OBJECT *
-supported_values_so_data_2948a9b5f7387814 (entry_count_t dispatch_base)
+supported_values_so_data_d12c7ed1cf59b855 (entry_count_t dispatch_base)
 {
   SCHEME_OBJECT ccb;
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES_FOR_DATA ();
 
-  ccb = (unstackify (((unsigned char *) (& (prog_supported_values_so_data_2948a9b5f7387814 [0]))), (sizeof (prog_supported_values_so_data_2948a9b5f7387814)), dispatch_base));
+  ccb = (unstackify (((unsigned char *) (& (prog_supported_values_so_data_d12c7ed1cf59b855 [0]))), (sizeof (prog_supported_values_so_data_d12c7ed1cf59b855)), dispatch_base));
   current_block = (OBJECT_ADDRESS (ccb));
   return (& (current_block [LABEL_133]));
 }
 
-DECLARE_COMPILED_DATA_NS ("supported-values.so", supported_values_so_data_2948a9b5f7387814)
+DECLARE_COMPILED_DATA_NS ("supported-values.so", supported_values_so_data_d12c7ed1cf59b855)
 
 #endif /* !WANT_ONLY_CODE */
 
-DECLARE_DYNAMIC_INITIALIZATION ("supported-values.so", "7d3196087883717b")
+DECLARE_DYNAMIC_INITIALIZATION ("supported-values.so", "ad526b2fec9a09e0")

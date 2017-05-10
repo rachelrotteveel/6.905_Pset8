@@ -1,5 +1,5 @@
 /* Emacs: this is -*- C -*- code, */
-/* generated 2017-05-03T22:04:49-04 by Liar version 4.118. */
+/* generated 2017-05-10T00:19:48-04 by Liar version 4.118. */
 
 #include "liarc.h"
 
@@ -1162,7 +1162,7 @@ INVOKE_PRIMITIVE_TARGET
 #ifndef WANT_ONLY_DATA
 
 SCHEME_OBJECT *
-contradictions_so_362591ef993695d8 (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
+contradictions_so_03deef5907040172 (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
 {
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES ();
@@ -1558,7 +1558,7 @@ INVOKE_INTERFACE_TARGET_0
 INVOKE_PRIMITIVE_TARGET
 }
 
-static const struct liarc_code_S arr_decl_contradictions_so_362591ef993695d8 [9] =
+static const struct liarc_code_S arr_decl_contradictions_so_03deef5907040172 [9] =
   {
     { "contradictions_so_code_1", 8, contradictions_so_code_1 },
     { "contradictions_so_code_2", 6, contradictions_so_code_2 },
@@ -1572,19 +1572,19 @@ static const struct liarc_code_S arr_decl_contradictions_so_362591ef993695d8 [9]
   };
 
 int
-decl_contradictions_so_362591ef993695d8 (void)
+decl_contradictions_so_03deef5907040172 (void)
 {
-  DECLARE_SUBCODE_MULTIPLE (arr_decl_contradictions_so_362591ef993695d8);
+  DECLARE_SUBCODE_MULTIPLE (arr_decl_contradictions_so_03deef5907040172);
   return (0);
 }
 
-DECLARE_COMPILED_CODE ("contradictions.so", 20, decl_contradictions_so_362591ef993695d8, contradictions_so_362591ef993695d8)
+DECLARE_COMPILED_CODE ("contradictions.so", 20, decl_contradictions_so_03deef5907040172, contradictions_so_03deef5907040172)
 
 #endif /* !WANT_ONLY_DATA */
 
 #ifndef WANT_ONLY_CODE
 
-static const unsigned char prog_contradictions_so_data_362591ef993695d8 [1246] =
+static const unsigned char prog_contradictions_so_data_03deef5907040172 [1246] =
   "\x4c\x0f\xc1\x02\x1d\x0c\xb8\x0d\x1d\xb0\x81\x88\x08\x28\x0d\xb9"
   "\x28\x0d\xba\x28\x0d\x28\x0d\xbb\x28\x0d\xbc\x28\x0d\xbd\x28\x0d"
   "\x23\x22\x29\x22\x29\x22\x29\x22\x29\x22\x29\x22\x29\x22\x29\x22"
@@ -1665,19 +1665,19 @@ static const unsigned char prog_contradictions_so_data_362591ef993695d8 [1246] =
   "\x87\x02\x02\x06\x81\x83\x02\x01\x04\x81\x83\x02\x29\x4c";
 
 SCHEME_OBJECT *
-contradictions_so_data_362591ef993695d8 (entry_count_t dispatch_base)
+contradictions_so_data_03deef5907040172 (entry_count_t dispatch_base)
 {
   SCHEME_OBJECT ccb;
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES_FOR_DATA ();
 
-  ccb = (unstackify (((unsigned char *) (& (prog_contradictions_so_data_362591ef993695d8 [0]))), (sizeof (prog_contradictions_so_data_362591ef993695d8)), dispatch_base));
+  ccb = (unstackify (((unsigned char *) (& (prog_contradictions_so_data_03deef5907040172 [0]))), (sizeof (prog_contradictions_so_data_03deef5907040172)), dispatch_base));
   current_block = (OBJECT_ADDRESS (ccb));
   return (& (current_block [LABEL_28]));
 }
 
-DECLARE_COMPILED_DATA_NS ("contradictions.so", contradictions_so_data_362591ef993695d8)
+DECLARE_COMPILED_DATA_NS ("contradictions.so", contradictions_so_data_03deef5907040172)
 
 #endif /* !WANT_ONLY_CODE */
 
-DECLARE_DYNAMIC_INITIALIZATION ("contradictions.so", "a292131f03385482")
+DECLARE_DYNAMIC_INITIALIZATION ("contradictions.so", "62dd3fef2dc84876")

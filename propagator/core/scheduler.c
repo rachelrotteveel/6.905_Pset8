@@ -1,5 +1,5 @@
 /* Emacs: this is -*- C -*- code, */
-/* generated 2017-05-03T22:03:31-04 by Liar version 4.118. */
+/* generated 2017-05-10T00:18:28-04 by Liar version 4.118. */
 
 #include "liarc.h"
 
@@ -3533,7 +3533,7 @@ INVOKE_INTERFACE_TARGET_1
 #ifndef WANT_ONLY_DATA
 
 SCHEME_OBJECT *
-scheduler_so_470db759fc22c94f (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
+scheduler_so_55307f08dd0121d5 (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
 {
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES ();
@@ -3690,7 +3690,7 @@ INVOKE_INTERFACE_TARGET_1
 INVOKE_PRIMITIVE_TARGET
 }
 
-static const struct liarc_code_S arr_decl_scheduler_so_470db759fc22c94f [21] =
+static const struct liarc_code_S arr_decl_scheduler_so_55307f08dd0121d5 [21] =
   {
     { "scheduler_so_code_1", 1, scheduler_so_code_1 },
     { "scheduler_so_code_2", 7, scheduler_so_code_2 },
@@ -3716,19 +3716,19 @@ static const struct liarc_code_S arr_decl_scheduler_so_470db759fc22c94f [21] =
   };
 
 int
-decl_scheduler_so_470db759fc22c94f (void)
+decl_scheduler_so_55307f08dd0121d5 (void)
 {
-  DECLARE_SUBCODE_MULTIPLE (arr_decl_scheduler_so_470db759fc22c94f);
+  DECLARE_SUBCODE_MULTIPLE (arr_decl_scheduler_so_55307f08dd0121d5);
   return (0);
 }
 
-DECLARE_COMPILED_CODE ("scheduler.so", 6, decl_scheduler_so_470db759fc22c94f, scheduler_so_470db759fc22c94f)
+DECLARE_COMPILED_CODE ("scheduler.so", 6, decl_scheduler_so_55307f08dd0121d5, scheduler_so_55307f08dd0121d5)
 
 #endif /* !WANT_ONLY_DATA */
 
 #ifndef WANT_ONLY_CODE
 
-static const unsigned char prog_scheduler_so_data_470db759fc22c94f [2430] =
+static const unsigned char prog_scheduler_so_data_55307f08dd0121d5 [2430] =
   "\x50\x29\xcf\x05\x1d\x0c\xb8\x0d\x1d\xb0\x81\x88\x28\x0d\xb9\x23"
   "\x22\x29\x21\x9f\x2b\xba\x1d\xb0\x82\x88\x0d\x0d\xbb\x06\x0d\xbc"
   "\x0d\xbd\x0d\xbe\x0d\xbf\x25\x28\x0d\x1c\x28\x0d\x1c\x23\x22\x29"
@@ -3883,19 +3883,19 @@ static const unsigned char prog_scheduler_so_data_470db759fc22c94f [2430] =
   "\x83\x02\x02\x06\x81\x85\x02\x01\x04\x81\x83\x02\x0d\x1d";
 
 SCHEME_OBJECT *
-scheduler_so_data_470db759fc22c94f (entry_count_t dispatch_base)
+scheduler_so_data_55307f08dd0121d5 (entry_count_t dispatch_base)
 {
   SCHEME_OBJECT ccb;
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES_FOR_DATA ();
 
-  ccb = (unstackify (((unsigned char *) (& (prog_scheduler_so_data_470db759fc22c94f [0]))), (sizeof (prog_scheduler_so_data_470db759fc22c94f)), dispatch_base));
+  ccb = (unstackify (((unsigned char *) (& (prog_scheduler_so_data_55307f08dd0121d5 [0]))), (sizeof (prog_scheduler_so_data_55307f08dd0121d5)), dispatch_base));
   current_block = (OBJECT_ADDRESS (ccb));
   return (& (current_block [LABEL_10]));
 }
 
-DECLARE_COMPILED_DATA_NS ("scheduler.so", scheduler_so_data_470db759fc22c94f)
+DECLARE_COMPILED_DATA_NS ("scheduler.so", scheduler_so_data_55307f08dd0121d5)
 
 #endif /* !WANT_ONLY_CODE */
 
-DECLARE_DYNAMIC_INITIALIZATION ("scheduler.so", "4d60253228720c6e")
+DECLARE_DYNAMIC_INITIALIZATION ("scheduler.so", "5a978c58f5c1b062")

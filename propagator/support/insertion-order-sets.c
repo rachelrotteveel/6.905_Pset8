@@ -1,5 +1,5 @@
 /* Emacs: this is -*- C -*- code, */
-/* generated 2017-05-03T21:49:00-04 by Liar version 4.118. */
+/* generated 2017-05-10T00:16:55-04 by Liar version 4.118. */
 
 #include "liarc.h"
 
@@ -1713,7 +1713,7 @@ INVOKE_PRIMITIVE_TARGET
 #ifndef WANT_ONLY_DATA
 
 SCHEME_OBJECT *
-insertion_order_sets_so_520d6206c55a6d6a (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
+insertion_order_sets_so_5fc46086a18f6c2f (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
 {
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES ();
@@ -2000,7 +2000,7 @@ INVOKE_INTERFACE_TARGET_0
 INVOKE_PRIMITIVE_TARGET
 }
 
-static const struct liarc_code_S arr_decl_insertion_order_sets_so_520d6206c55a6d6a [12] =
+static const struct liarc_code_S arr_decl_insertion_order_sets_so_5fc46086a18f6c2f [12] =
   {
     { "insertion_order_sets_so_code_1", 1, insertion_order_sets_so_code_1 },
     { "insertion_order_sets_so_code_2", 1, insertion_order_sets_so_code_2 },
@@ -2017,19 +2017,19 @@ static const struct liarc_code_S arr_decl_insertion_order_sets_so_520d6206c55a6d
   };
 
 int
-decl_insertion_order_sets_so_520d6206c55a6d6a (void)
+decl_insertion_order_sets_so_5fc46086a18f6c2f (void)
 {
-  DECLARE_SUBCODE_MULTIPLE (arr_decl_insertion_order_sets_so_520d6206c55a6d6a);
+  DECLARE_SUBCODE_MULTIPLE (arr_decl_insertion_order_sets_so_5fc46086a18f6c2f);
   return (0);
 }
 
-DECLARE_COMPILED_CODE ("insertion-order-sets.so", 13, decl_insertion_order_sets_so_520d6206c55a6d6a, insertion_order_sets_so_520d6206c55a6d6a)
+DECLARE_COMPILED_CODE ("insertion-order-sets.so", 13, decl_insertion_order_sets_so_5fc46086a18f6c2f, insertion_order_sets_so_5fc46086a18f6c2f)
 
 #endif /* !WANT_ONLY_DATA */
 
 #ifndef WANT_ONLY_CODE
 
-static const unsigned char prog_insertion_order_sets_so_data_520d6206c55a6d6a [1343] =
+static const unsigned char prog_insertion_order_sets_so_data_5fc46086a18f6c2f [1343] =
   "\x34\x13\xef\x02\x1d\x0c\xb8\x0d\x1d\xb0\x81\x88\xc2\xb9\x81\x22"
   "\x29\x21\x9e\x2b\xba\x1d\xb0\x82\x88\xb1\x82\x22\x29\x21\x9e\x2b"
   "\xbb\x1d\xb0\x83\x88\xc3\xbc\x1d\x81\x22\x29\x21\x9f\x2b\xbd\x1d"
@@ -2116,19 +2116,19 @@ static const unsigned char prog_insertion_order_sets_so_data_520d6206c55a6d6a [1
   "\x81\x85\x02\x02\x06\x81\x87\x02\x01\x04\x81\x83\x02\x1b\x34";
 
 SCHEME_OBJECT *
-insertion_order_sets_so_data_520d6206c55a6d6a (entry_count_t dispatch_base)
+insertion_order_sets_so_data_5fc46086a18f6c2f (entry_count_t dispatch_base)
 {
   SCHEME_OBJECT ccb;
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES_FOR_DATA ();
 
-  ccb = (unstackify (((unsigned char *) (& (prog_insertion_order_sets_so_data_520d6206c55a6d6a [0]))), (sizeof (prog_insertion_order_sets_so_data_520d6206c55a6d6a)), dispatch_base));
+  ccb = (unstackify (((unsigned char *) (& (prog_insertion_order_sets_so_data_5fc46086a18f6c2f [0]))), (sizeof (prog_insertion_order_sets_so_data_5fc46086a18f6c2f)), dispatch_base));
   current_block = (OBJECT_ADDRESS (ccb));
   return (& (current_block [LABEL_20]));
 }
 
-DECLARE_COMPILED_DATA_NS ("insertion-order-sets.so", insertion_order_sets_so_data_520d6206c55a6d6a)
+DECLARE_COMPILED_DATA_NS ("insertion-order-sets.so", insertion_order_sets_so_data_5fc46086a18f6c2f)
 
 #endif /* !WANT_ONLY_CODE */
 
-DECLARE_DYNAMIC_INITIALIZATION ("insertion-order-sets.so", "59242413ab12bb1e")
+DECLARE_DYNAMIC_INITIALIZATION ("insertion-order-sets.so", "c106782495194476")

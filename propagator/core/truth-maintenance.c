@@ -1,5 +1,5 @@
 /* Emacs: this is -*- C -*- code, */
-/* generated 2017-05-03T22:04:48-04 by Liar version 4.118. */
+/* generated 2017-05-10T00:19:47-04 by Liar version 4.118. */
 
 #include "liarc.h"
 
@@ -3727,7 +3727,7 @@ INVOKE_INTERFACE_TARGET_0
 #ifndef WANT_ONLY_DATA
 
 SCHEME_OBJECT *
-truth_maintenance_so_741d2cb0ecb712f6 (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
+truth_maintenance_so_9bc0e8159ea15e9e (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
 {
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES ();
@@ -5050,7 +5050,7 @@ INVOKE_INTERFACE_TARGET_0
 INVOKE_PRIMITIVE_TARGET
 }
 
-static const struct liarc_code_S arr_decl_truth_maintenance_so_741d2cb0ecb712f6 [29] =
+static const struct liarc_code_S arr_decl_truth_maintenance_so_9bc0e8159ea15e9e [29] =
   {
     { "truth_maintenance_so_code_1", 1, truth_maintenance_so_code_1 },
     { "truth_maintenance_so_code_2", 2, truth_maintenance_so_code_2 },
@@ -5084,19 +5084,19 @@ static const struct liarc_code_S arr_decl_truth_maintenance_so_741d2cb0ecb712f6 
   };
 
 int
-decl_truth_maintenance_so_741d2cb0ecb712f6 (void)
+decl_truth_maintenance_so_9bc0e8159ea15e9e (void)
 {
-  DECLARE_SUBCODE_MULTIPLE (arr_decl_truth_maintenance_so_741d2cb0ecb712f6);
+  DECLARE_SUBCODE_MULTIPLE (arr_decl_truth_maintenance_so_9bc0e8159ea15e9e);
   return (0);
 }
 
-DECLARE_COMPILED_CODE ("truth-maintenance.so", 69, decl_truth_maintenance_so_741d2cb0ecb712f6, truth_maintenance_so_741d2cb0ecb712f6)
+DECLARE_COMPILED_CODE ("truth-maintenance.so", 69, decl_truth_maintenance_so_9bc0e8159ea15e9e, truth_maintenance_so_9bc0e8159ea15e9e)
 
 #endif /* !WANT_ONLY_DATA */
 
 #ifndef WANT_ONLY_CODE
 
-static const unsigned char prog_truth_maintenance_so_data_741d2cb0ecb712f6 [3833] =
+static const unsigned char prog_truth_maintenance_so_data_9bc0e8159ea15e9e [3833] =
   "\xda\x01\x39\xbd\x08\x1d\x0c\xb8\x0d\x1d\xb0\x81\x88\x0d\xb9\x22"
   "\x29\x21\x9d\x2b\xba\x1d\xb0\x82\x88\x07\xb1\xc2\xb9\x80\x22\x29"
   "\x22\x29\x21\x17\x2b\xbb\x1d\xb0\x83\x88\xb1\x81\x0c\x28\x0d\xb9"
@@ -5339,19 +5339,19 @@ static const unsigned char prog_truth_maintenance_so_data_741d2cb0ecb712f6 [3833
   "\x01\x04\x81\x83\x02\x8b\x01\xda\x01";
 
 SCHEME_OBJECT *
-truth_maintenance_so_data_741d2cb0ecb712f6 (entry_count_t dispatch_base)
+truth_maintenance_so_data_9bc0e8159ea15e9e (entry_count_t dispatch_base)
 {
   SCHEME_OBJECT ccb;
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES_FOR_DATA ();
 
-  ccb = (unstackify (((unsigned char *) (& (prog_truth_maintenance_so_data_741d2cb0ecb712f6 [0]))), (sizeof (prog_truth_maintenance_so_data_741d2cb0ecb712f6)), dispatch_base));
+  ccb = (unstackify (((unsigned char *) (& (prog_truth_maintenance_so_data_9bc0e8159ea15e9e [0]))), (sizeof (prog_truth_maintenance_so_data_9bc0e8159ea15e9e)), dispatch_base));
   current_block = (OBJECT_ADDRESS (ccb));
   return (& (current_block [LABEL_86]));
 }
 
-DECLARE_COMPILED_DATA_NS ("truth-maintenance.so", truth_maintenance_so_data_741d2cb0ecb712f6)
+DECLARE_COMPILED_DATA_NS ("truth-maintenance.so", truth_maintenance_so_data_9bc0e8159ea15e9e)
 
 #endif /* !WANT_ONLY_CODE */
 
-DECLARE_DYNAMIC_INITIALIZATION ("truth-maintenance.so", "52f353f7423d9027")
+DECLARE_DYNAMIC_INITIALIZATION ("truth-maintenance.so", "0dfa56be8e62e280")

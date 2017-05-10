@@ -1,5 +1,5 @@
 /* Emacs: this is -*- C -*- code, */
-/* generated 2017-05-03T21:49:00-04 by Liar version 4.118. */
+/* generated 2017-05-10T00:16:55-04 by Liar version 4.118. */
 
 #include "liarc.h"
 
@@ -2686,7 +2686,7 @@ INVOKE_INTERFACE_TARGET_1
 #ifndef WANT_ONLY_DATA
 
 SCHEME_OBJECT *
-coercions_so_a23cb9f852c0d919 (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
+coercions_so_adf5304d4d61ddc6 (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
 {
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES ();
@@ -2936,7 +2936,7 @@ INVOKE_INTERFACE_TARGET_1
 INVOKE_PRIMITIVE_TARGET
 }
 
-static const struct liarc_code_S arr_decl_coercions_so_a23cb9f852c0d919 [7] =
+static const struct liarc_code_S arr_decl_coercions_so_adf5304d4d61ddc6 [7] =
   {
     { "coercions_so_code_1", 2, coercions_so_code_1 },
     { "coercions_so_code_2", 1, coercions_so_code_2 },
@@ -2948,19 +2948,19 @@ static const struct liarc_code_S arr_decl_coercions_so_a23cb9f852c0d919 [7] =
   };
 
 int
-decl_coercions_so_a23cb9f852c0d919 (void)
+decl_coercions_so_adf5304d4d61ddc6 (void)
 {
-  DECLARE_SUBCODE_MULTIPLE (arr_decl_coercions_so_a23cb9f852c0d919);
+  DECLARE_SUBCODE_MULTIPLE (arr_decl_coercions_so_adf5304d4d61ddc6);
   return (0);
 }
 
-DECLARE_COMPILED_CODE ("coercions.so", 13, decl_coercions_so_a23cb9f852c0d919, coercions_so_a23cb9f852c0d919)
+DECLARE_COMPILED_CODE ("coercions.so", 13, decl_coercions_so_adf5304d4d61ddc6, coercions_so_adf5304d4d61ddc6)
 
 #endif /* !WANT_ONLY_DATA */
 
 #ifndef WANT_ONLY_CODE
 
-static const unsigned char prog_coercions_so_data_a23cb9f852c0d919 [1419] =
+static const unsigned char prog_coercions_so_data_adf5304d4d61ddc6 [1419] =
   "\xa2\x01\x10\xf7\x02\x1d\x0c\xb8\x0d\x1d\xb0\x81\x88\x81\x28\x0d"
   "\xb9\x23\x22\x29\x22\x29\x21\x17\x2b\xba\x1d\xb0\x82\x88\x81\x28"
   "\xb1\x23\x22\x29\x21\x17\x2b\xb9\x1d\xb0\x83\x88\x0d\xbb\x0d\xbc"
@@ -3052,19 +3052,19 @@ static const unsigned char prog_coercions_so_data_a23cb9f852c0d919 [1419] =
   "\x06\x81\x83\x02\x01\x04\x81\x83\x02\x1b\x37";
 
 SCHEME_OBJECT *
-coercions_so_data_a23cb9f852c0d919 (entry_count_t dispatch_base)
+coercions_so_data_adf5304d4d61ddc6 (entry_count_t dispatch_base)
 {
   SCHEME_OBJECT ccb;
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES_FOR_DATA ();
 
-  ccb = (unstackify (((unsigned char *) (& (prog_coercions_so_data_a23cb9f852c0d919 [0]))), (sizeof (prog_coercions_so_data_a23cb9f852c0d919)), dispatch_base));
+  ccb = (unstackify (((unsigned char *) (& (prog_coercions_so_data_adf5304d4d61ddc6 [0]))), (sizeof (prog_coercions_so_data_adf5304d4d61ddc6)), dispatch_base));
   current_block = (OBJECT_ADDRESS (ccb));
   return (& (current_block [LABEL_18]));
 }
 
-DECLARE_COMPILED_DATA_NS ("coercions.so", coercions_so_data_a23cb9f852c0d919)
+DECLARE_COMPILED_DATA_NS ("coercions.so", coercions_so_data_adf5304d4d61ddc6)
 
 #endif /* !WANT_ONLY_CODE */
 
-DECLARE_DYNAMIC_INITIALIZATION ("coercions.so", "635a8df5c5f96503")
+DECLARE_DYNAMIC_INITIALIZATION ("coercions.so", "c5a4e95c2c2c7e45")

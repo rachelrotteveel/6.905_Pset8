@@ -1,5 +1,5 @@
 /* Emacs: this is -*- C -*- code, */
-/* generated 2017-05-03T22:03:38-04 by Liar version 4.118. */
+/* generated 2017-05-10T00:18:33-04 by Liar version 4.118. */
 
 #include "liarc.h"
 
@@ -8799,7 +8799,7 @@ INVOKE_PRIMITIVE_TARGET
 #ifndef WANT_ONLY_DATA
 
 SCHEME_OBJECT *
-cell_sugar_so_bcfa078c701b546e (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
+cell_sugar_so_96193c2e17769bcc (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
 {
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES ();
@@ -9206,7 +9206,7 @@ INVOKE_INTERFACE_TARGET_1
 INVOKE_PRIMITIVE_TARGET
 }
 
-static const struct liarc_code_S arr_decl_cell_sugar_so_bcfa078c701b546e [7] =
+static const struct liarc_code_S arr_decl_cell_sugar_so_96193c2e17769bcc [7] =
   {
     { "cell_sugar_so_code_1", 24, cell_sugar_so_code_1 },
     { "cell_sugar_so_code_2", 43, cell_sugar_so_code_2 },
@@ -9218,19 +9218,19 @@ static const struct liarc_code_S arr_decl_cell_sugar_so_bcfa078c701b546e [7] =
   };
 
 int
-decl_cell_sugar_so_bcfa078c701b546e (void)
+decl_cell_sugar_so_96193c2e17769bcc (void)
 {
-  DECLARE_SUBCODE_MULTIPLE (arr_decl_cell_sugar_so_bcfa078c701b546e);
+  DECLARE_SUBCODE_MULTIPLE (arr_decl_cell_sugar_so_96193c2e17769bcc);
   return (0);
 }
 
-DECLARE_COMPILED_CODE ("cell-sugar.so", 23, decl_cell_sugar_so_bcfa078c701b546e, cell_sugar_so_bcfa078c701b546e)
+DECLARE_COMPILED_CODE ("cell-sugar.so", 23, decl_cell_sugar_so_96193c2e17769bcc, cell_sugar_so_96193c2e17769bcc)
 
 #endif /* !WANT_ONLY_DATA */
 
 #ifndef WANT_ONLY_CODE
 
-static const unsigned char prog_cell_sugar_so_data_bcfa078c701b546e [3065] =
+static const unsigned char prog_cell_sugar_so_data_96193c2e17769bcc [3065] =
   "\x9e\x02\x0f\xb8\x06\x1d\x0c\xb8\x0d\x1d\xb0\x81\x88\x0d\x0d\xb9"
   "\x0d\xba\x0d\xbb\x0d\xbc\xc1\xbd\x06\x07\x08\xc1\xbe\x28\x0d\xbf"
   "\x23\x22\x29\x22\x29\x22\x29\x22\x29\x22\x29\x22\x29\x22\x29\x22"
@@ -9425,19 +9425,19 @@ static const unsigned char prog_cell_sugar_so_data_bcfa078c701b546e [3065] =
   "\x85\x02\x01\x04\x81\x83\x02\x2f\x49";
 
 SCHEME_OBJECT *
-cell_sugar_so_data_bcfa078c701b546e (entry_count_t dispatch_base)
+cell_sugar_so_data_96193c2e17769bcc (entry_count_t dispatch_base)
 {
   SCHEME_OBJECT ccb;
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES_FOR_DATA ();
 
-  ccb = (unstackify (((unsigned char *) (& (prog_cell_sugar_so_data_bcfa078c701b546e [0]))), (sizeof (prog_cell_sugar_so_data_bcfa078c701b546e)), dispatch_base));
+  ccb = (unstackify (((unsigned char *) (& (prog_cell_sugar_so_data_96193c2e17769bcc [0]))), (sizeof (prog_cell_sugar_so_data_96193c2e17769bcc)), dispatch_base));
   current_block = (OBJECT_ADDRESS (ccb));
   return (& (current_block [LABEL_27]));
 }
 
-DECLARE_COMPILED_DATA_NS ("cell-sugar.so", cell_sugar_so_data_bcfa078c701b546e)
+DECLARE_COMPILED_DATA_NS ("cell-sugar.so", cell_sugar_so_data_96193c2e17769bcc)
 
 #endif /* !WANT_ONLY_CODE */
 
-DECLARE_DYNAMIC_INITIALIZATION ("cell-sugar.so", "5843890e7e54b85f")
+DECLARE_DYNAMIC_INITIALIZATION ("cell-sugar.so", "15df3ff202b49df5")

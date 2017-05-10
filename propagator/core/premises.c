@@ -1,5 +1,5 @@
 /* Emacs: this is -*- C -*- code, */
-/* generated 2017-05-03T22:04:46-04 by Liar version 4.118. */
+/* generated 2017-05-10T00:19:45-04 by Liar version 4.118. */
 
 #include "liarc.h"
 
@@ -1618,7 +1618,7 @@ INVOKE_PRIMITIVE_TARGET
 #ifndef WANT_ONLY_DATA
 
 SCHEME_OBJECT *
-premises_so_81455e2e98d55a3d (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
+premises_so_aaae75bfa8ba20b5 (SCHEME_OBJECT * Rpc, entry_count_t dispatch_base)
 {
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES ();
@@ -2759,7 +2759,7 @@ INVOKE_INTERFACE_TARGET_0
 INVOKE_PRIMITIVE_TARGET
 }
 
-static const struct liarc_code_S arr_decl_premises_so_81455e2e98d55a3d [11] =
+static const struct liarc_code_S arr_decl_premises_so_aaae75bfa8ba20b5 [11] =
   {
     { "premises_so_code_1", 7, premises_so_code_1 },
     { "premises_so_code_2", 1, premises_so_code_2 },
@@ -2775,19 +2775,19 @@ static const struct liarc_code_S arr_decl_premises_so_81455e2e98d55a3d [11] =
   };
 
 int
-decl_premises_so_81455e2e98d55a3d (void)
+decl_premises_so_aaae75bfa8ba20b5 (void)
 {
-  DECLARE_SUBCODE_MULTIPLE (arr_decl_premises_so_81455e2e98d55a3d);
+  DECLARE_SUBCODE_MULTIPLE (arr_decl_premises_so_aaae75bfa8ba20b5);
   return (0);
 }
 
-DECLARE_COMPILED_CODE ("premises.so", 55, decl_premises_so_81455e2e98d55a3d, premises_so_81455e2e98d55a3d)
+DECLARE_COMPILED_CODE ("premises.so", 55, decl_premises_so_aaae75bfa8ba20b5, premises_so_aaae75bfa8ba20b5)
 
 #endif /* !WANT_ONLY_DATA */
 
 #ifndef WANT_ONLY_CODE
 
-static const unsigned char prog_premises_so_data_81455e2e98d55a3d [2043] =
+static const unsigned char prog_premises_so_data_aaae75bfa8ba20b5 [2043] =
   "\xc1\x01\x16\xe8\x03\x1d\x0c\xb8\x0d\x1d\xb0\x81\x88\x0d\xb9\x0d"
   "\x0d\x28\x0d\x28\x0d\xba\x28\x0d\xbb\x28\x0d\x28\x0d\xbc\x28\x0d"
   "\x28\x0d\x23\x22\x29\x22\x29\x22\x29\x22\x29\x22\x29\x22\x29\x22"
@@ -2918,19 +2918,19 @@ static const unsigned char prog_premises_so_data_81455e2e98d55a3d [2043] =
   "\x81\x8b\x02\x01\x04\x81\x83\x02\x6f\xc1\x01";
 
 SCHEME_OBJECT *
-premises_so_data_81455e2e98d55a3d (entry_count_t dispatch_base)
+premises_so_data_aaae75bfa8ba20b5 (entry_count_t dispatch_base)
 {
   SCHEME_OBJECT ccb;
   SCHEME_OBJECT * current_block;
   DECLARE_VARIABLES_FOR_DATA ();
 
-  ccb = (unstackify (((unsigned char *) (& (prog_premises_so_data_81455e2e98d55a3d [0]))), (sizeof (prog_premises_so_data_81455e2e98d55a3d)), dispatch_base));
+  ccb = (unstackify (((unsigned char *) (& (prog_premises_so_data_aaae75bfa8ba20b5 [0]))), (sizeof (prog_premises_so_data_aaae75bfa8ba20b5)), dispatch_base));
   current_block = (OBJECT_ADDRESS (ccb));
   return (& (current_block [LABEL_70]));
 }
 
-DECLARE_COMPILED_DATA_NS ("premises.so", premises_so_data_81455e2e98d55a3d)
+DECLARE_COMPILED_DATA_NS ("premises.so", premises_so_data_aaae75bfa8ba20b5)
 
 #endif /* !WANT_ONLY_CODE */
 
-DECLARE_DYNAMIC_INITIALIZATION ("premises.so", "f0193190df958ea6")
+DECLARE_DYNAMIC_INITIALIZATION ("premises.so", "693847396813a8ac")
