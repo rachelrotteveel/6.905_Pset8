@@ -49,6 +49,9 @@
 	   (loop (cddr plist))))))
 
 (define (eq-put! node property value)
+  ;;;(display "node:")(display node)(newline)
+  ;;;(display "property:")(display property)(newline)
+  ;;;(display "value:")(display value)(newline)
   (let ((plist
 	 (hash-table/get eq-properties node '())))
     (let ((vcell (assq property plist)))
