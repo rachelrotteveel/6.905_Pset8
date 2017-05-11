@@ -85,39 +85,6 @@
 	(else
 	 (error "I don't know how to combine multiple parts"))))
 
-#|
-(define (combine-financial-entities compound . parts)
-  ;(assert (every financial-entity? parts))
-  (display parts)(newline)
-  (display "length: ")(display (length parts))(newline)
-  (cond ((= (length parts) 0)
-         'done) 
-        ((= (length parts) 2)
-	 (let ((p1 (car parts)) (p2 (cadr parts)))
-           (display "p1: ")(display p1)(newline)
-           (display "p2: ")(display p2)(newline)
-	   (c:+ (gross-income p1) (gross-income p2) (gross-income compound))
-	   (c:+ (net-income p1) (net-income p2) (net-income compound))
-	   (c:+ (expenses p1) (expenses p2) (expenses compound))
-	   'done))
-	((> (length parts) 0) 
-	 (let ((p1 (car parts)) (rest (cdr parts)))
-           (display "p1: ")(display p1)(newline)
-           (display "rest: ")(display rest)(newline)
-           (rest-combined (combine-financial-entities compound rest))
-           (c:+ (gross-income p1) 
-                (gross-income rest-combined) 
-                (gross-income compound))
-	   (c:+ (net-income p1) 
-                (net-income rest-combined)
-                (net-income compound))
-	   (c:+ (expenses p1) 
-                (expenses rest-combined)
-                (expenses compound))
-           'done))
-           ))))
-|#
-
 
 #|
 (initialize-scheduler)

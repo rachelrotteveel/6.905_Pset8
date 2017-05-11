@@ -48,7 +48,7 @@ May 12, 2017
       (e:/
         (e:id (eq-get name 'weight))
         (e:square (eq-get name 'height)))
-      703
+      45.5
       cell-name)))
 
 (define (create-people people)
@@ -139,7 +139,82 @@ May 12, 2017
 ;;; Problem 8.2 ;;;
 ;;;;;;;;;;;;;;;;;;;
 
+(define (breakdown sum-node . part-names)
+  (for-each
+    (lambda (part-name)
+      (let-cell part
+        (add-branch! sum-node part part-name)))
+    part-names)
+  (c:id
+    (let lp ((names part-names))
+      (ce:+
+        (eq-get sum-node (car names))
+        (cond
+          ((= (length names) 2)
+            (eq-get sum-node (cadr names)))
+          (else
+            (lp (cdr names))))))
+    sum-node)
+  'done)
 
+(define (c:sum part-nodes sum-node)
+  (let loop ((part-nodes part-nodes) (entity (e:constant 0)))
+    (if (null? part-nodes)
+        (c:== entity sum-node)
+        (let ((new-entity (make-cell)))
+          (c:+ (car part-nodes) entity new-entity)
+          (loop (cdr part-nodes) new-entity)))))
+
+(define (combine-financial-entities compound . parts)
+  (assert (every financial-entity? parts))
+  (define (combine f) (c:sum (map f parts) (f compound)))
+  (combine gross-income)
+  (combine net-income)
+  (combine expenses)
+  'done)
+
+#|
+(initialize-scheduler)
+
+(make-financial-entity 'Alyssa)
+(make-financial-entity 'Ben)
+(make-financial-entity 'baby)
+
+;;; Ben and Alyssa are married
+(make-financial-entity 'Ben-Alyssa)
+(combine-financial-entities 'Ben-Alyssa 'Ben 'Alyssa)
+
+;;; Ben, Alyssa, and their baby are one financial entity
+(make-financial-entity 'Ben-Alyssa-baby)
+(combine-financial-entities 'Ben-Alyssa-baby 'Ben 'Alyssa 'baby)
+
+;;; Ben and Alyssa file income tax jointly
+(tell! (gross-income 'Ben-Alyssa-baby) 427000 'IRS)
+
+;;; Ben works at Gaggle as a software engineer.
+(breakdown (gross-income 'Ben) 'Gaggle-salary 'investments)
+
+;;; He gets paid a lot to make good apps.
+(tell! (thing-of '(Gaggle-salary gross-income Ben)) 200000 'Gaggle)
+
+;;; Alyssa works as a PhD biochemist in big pharma.
+(breakdown (gross-income 'Alyssa) 'GeneScam-salary 'investments)
+
+;;; Ben and Alyssa's baby makes money as a model for Pampers
+(breakdown (gross-income 'baby) 'Pampers-salary 'investments)
+
+;;; Biochemists are paid poorly.
+(tell! (thing-of '(GeneScam-salary gross-income Alyssa)) 70000 'GeneScam)
+
+(tell! (thing-of '(investments gross-income Alyssa))
+       (make-interval 30000 40000) 'Alyssa)
+
+(inquire (thing-of '(investments gross-income Ben)))
+;Value: #(value=#[interval 117000 127000],
+;   premises=(alyssa gaggle genescam irs),
+;   informants=((-:p gross-income part)))
+
+|#
 
 
 ;;;;;;;;;;;;;;;;;;;
