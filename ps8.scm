@@ -109,8 +109,10 @@ May 12, 2017
 (create-people '(Martin John Melissa Eric Rachel))
 (tell! (eq-get 'Melissa 'height) 125 'melissa-estimate)
 (tell! (eq-get 'Melissa 'weight) 190 'rachel-estimate)
-(tell! (eq-get 'Martin 'expenses) (make-interval 150000 200000) 'martin-estimate)
-(tell! (eq-get 'Martin 'income) (make-interval 130000 140000) 'company-estimate)
+(tell! (eq-get 'Martin 'expenses)
+       (make-interval 150000 200000) 'martin-estimate)
+(tell! (eq-get 'Martin 'income)
+       (make-interval 130000 140000) 'company-estimate)
 
 #|
 (inquire (eq-get 'Martin 'living-beyond-means))
@@ -158,7 +160,8 @@ May 12, 2017
   'done)
 
 (define (c:sum part-nodes sum-node)
-  (let loop ((part-nodes part-nodes) (entity (e:constant 0)))
+  (let loop ((part-nodes part-nodes)
+	     (entity (e:constant 0)))
     (if (null? part-nodes)
         (c:== entity sum-node)
         (let ((new-entity (make-cell)))
@@ -186,40 +189,119 @@ May 12, 2017
 
 ;;; Ben, Alyssa, and their baby are one financial entity
 (make-financial-entity 'Ben-Alyssa-baby)
-(combine-financial-entities 'Ben-Alyssa-baby 'Ben 'Alyssa 'baby)
+(combine-financial-entities 'Ben-Alyssa-baby 
+			    'Ben 'Alyssa 'baby)
 
-;;; Ben and Alyssa file income tax jointly
+;;; Ben, Alyssa, and baby file income tax jointly
 (tell! (gross-income 'Ben-Alyssa-baby) 427000 'IRS)
 
-;;; Ben works at Gaggle as a software engineer.
-(breakdown (gross-income 'Ben) 'Gaggle-salary 'investments)
-
-;;; He gets paid a lot to make good apps.
-(tell! (thing-of '(Gaggle-salary gross-income Ben)) 200000 'Gaggle)
-
-;;; Alyssa works as a PhD biochemist in big pharma.
-(breakdown (gross-income 'Alyssa) 'GeneScam-salary 'investments)
-
-;;; Ben and Alyssa's baby makes money as a model for Pampers
-(breakdown (gross-income 'baby) 'Pampers-salary 'investments)
-
-;;; Biochemists are paid poorly.
-(tell! (thing-of '(GeneScam-salary gross-income Alyssa)) 70000 'GeneScam)
-
-(tell! (thing-of '(investments gross-income Alyssa))
-       (make-interval 30000 40000) 'Alyssa)
-
-(inquire (thing-of '(investments gross-income Ben)))
-;Value: #(value=#[interval 117000 127000],
-;   premises=(alyssa gaggle genescam irs),
-;   informants=((-:p gross-income part)))
-
+;;; Ben works at Gaggle as a software engineer, and has
+;;; a part-time job as a yoga instructor.
+(breakdown (gross-income 'Ben) 
+	   'Gaggle-salary 
+	   'investments 
+	   'yoga-instructor)
 |#
 
 
 ;;;;;;;;;;;;;;;;;;;
 ;;; Problem 8.3 ;;;
 ;;;;;;;;;;;;;;;;;;;
+
+#|
+(initialize-scheduler)
+
+(make-financial-entity 'Alyssa)
+(make-financial-entity 'Ben)
+(make-financial-entity 'Harry)
+(make-financial-entity 'Eva)
+
+########################################################
+;;; Ben and Alyssa are married
+(make-financial-entity 'Ben-Alyssa)
+(combine-financial-entities 'Ben-Alyssa 'Ben 'Alyssa)
+
+;;; Ben and Alyssa file income tax jointly
+(tell! (gross-income 'Ben-Alyssa) 427000 'IRS)
+
+;;; Ben works at Gaggle as a software engineer.
+(breakdown (gross-income 'Ben) 'Gaggle-salary 'investments)
+
+;;; He gets paid alot to make good apps.
+(tell! (thing-of 
+	'(Gaggle-salary gross-income Ben)) 200000 'Gaggle)
+
+;;; Alyssa works as a PhD biochemist in big pharma.
+(breakdown (gross-income 'Alyssa) 
+	   'GeneScam-salary 'investments)
+
+;;; Biochemists are paid poorly.
+(tell! (thing-of '(GeneScam-salary gross-income Alyssa)) 
+       70000 'GeneScam)
+(tell! (thing-of '(investments gross-income Alyssa))
+       (make-interval 30000 40000) 'Alyssa)
+
+;;; Ben is a tightwad
+(tell! (thing-of '(expenses Ben)) 
+       (make-interval 10000 20000) 
+       'Ben)
+
+;;; But Alyssa is not cheap.  She likes luxury.
+(tell! (thing-of '(expenses Alyssa)) 
+       (make-interval 200000 215000) 
+       'Alyssa)
+
+########################################################
+;;; Harry and Eva are married
+(make-financial-entity 'Harry-Eva)
+(combine-financial-entities 'Harry-Eva 'Harry 'Eva)
+
+;;; Harry and Eva file income tax jointly
+(tell! (gross-income 'Harry-Eva) 347000 'IRS)
+
+##########################################################
+;;; Harry and Ben are part of a club
+(make-financial-entity 'Harry-Ben-club)
+(combine-financial-entities 'Harry-Ben-club 'Harry 'Ben)
+
+;;; The club has monthly dues
+(tell! (expenses 'Harry-Ben-club) 
+       (make-interval 2000 4000) 'monthly-dues)
+
+;;; The club runs an annual fundraiser 
+(tell! (gross-income 'Harry-Ben-club) 5000 
+       'annual-fundraiser)
+
+##########################################################
+;;; Everyone donates to a neighborhood fund
+(make-financial-entity 'Neighborhood-Fund)
+(combine-financial-entities 'Neighborhood-Fund 
+			    'Harry 'Ben 'Alyssa 'Eva)
+
+;;; They all donate toward landscaping and neighborhood events
+(tell! (expenses 'Neighborhood-Fund) 
+       (make-interval 8000 11000) 'contributions)
+
+##########################################################
+(pp (inquire (thing-of '(gross-income Ben))))
+#(value=#[interval 317000 327000],
+   premises=(genescam alyssa irs),
+   informants=((-:p sum cell)))
+(value #[interval 317000 327000])
+(support (genescam alyssa irs))
+(informants (#[%diagram 465 -:p]))
+
+(pp (inquire (thing-of '(expenses Ben))))
+#(value=#[interval 10000 20000],
+   premises=(ben),
+   informants=(user))
+(value #[interval 10000 20000])
+(support (ben))
+(informants (user))
+
+
+|#
+
 
 ;;;;;;;;;;;;;;;;;;;
 ;;; Problem 8.4 ;;;
